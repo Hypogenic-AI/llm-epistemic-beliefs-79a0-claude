@@ -1,0 +1,17 @@
+Resource finding completed: 2026-02-11
+
+Research Question: Do LLMs differentiate epistemic belief from non-epistemic belief?
+
+Summary of Resources Gathered:
+- 30 papers downloaded (8 deep-read, 22 additional)
+- 8 datasets downloaded (KaBLE, MindGames, Trilemma-of-Truth, Representational Stability, ToMi-NLI, SimpleToM, Theory-of-Mind, Epistemic Clarification)
+- 3 code repositories cloned (belief-in-the-machine, representational_stability, llm-theory-of-mind)
+- Comprehensive literature_review.md synthesizing findings
+- Complete resources.md catalog of all resources
+
+Key Finding from Literature Review:
+LLMs have partial but incomplete differentiation between epistemic and non-epistemic belief.
+Internally, they maintain representations encoding aspects relevant to epistemic distinctions.
+Behaviorally, they fail to consistently deploy these distinctions, confusing knowledge with
+belief, allowing non-epistemic contextual features to override epistemic commitments, and
+failing at formal epistemic reasoning.

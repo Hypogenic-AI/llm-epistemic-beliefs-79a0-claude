@@ -1,0 +1,74 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "tomi-nli",
+  "dataset_size": 7753145,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/tasksource/tomi-nli@0ef85426a9b6765dca712c0d45cc55d42ef18fe7/train.tsv": {
+      "num_bytes": 2494430,
+      "checksum": null
+    },
+    "hf://datasets/tasksource/tomi-nli@0ef85426a9b6765dca712c0d45cc55d42ef18fe7/val.tsv": {
+      "num_bytes": 2499474,
+      "checksum": null
+    },
+    "hf://datasets/tasksource/tomi-nli@0ef85426a9b6765dca712c0d45cc55d42ef18fe7/test.tsv": {
+      "num_bytes": 2489694,
+      "checksum": null
+    }
+  },
+  "download_size": 7483598,
+  "features": {
+    "premise": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "hypothesis": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "label": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "invalid_hypothesis": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "valid_hypothesis": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 15236743,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 2584279,
+      "num_examples": 5994,
+      "dataset_name": "tomi-nli"
+    },
+    "validation": {
+      "name": "validation",
+      "num_bytes": 2589323,
+      "num_examples": 5994,
+      "dataset_name": "tomi-nli"
+    },
+    "test": {
+      "name": "test",
+      "num_bytes": 2579543,
+      "num_examples": 5994,
+      "dataset_name": "tomi-nli"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

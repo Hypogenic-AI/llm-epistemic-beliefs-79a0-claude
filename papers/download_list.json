@@ -1,0 +1,256 @@
+[
+  [
+    13,
+    {
+      "title": "Large Language Models as Theory of Mind Aware Generative Agents with Counterfactual Reflection",
+      "year": 2025,
+      "authors": "Bo Yang, Jiaxian Guo, Yusuke Iwasawa, Yutaka Matsuo",
+      "url": "https://www.semanticscholar.org/paper/3cc53a6aaac89e3c75771a9ef85c4c3948b8dddf",
+      "relevance": 3,
+      "abstract": "Recent studies have increasingly demonstrated that large language models (LLMs) possess significant theory of mind (ToM) capabilities, showing the potential for simulating the tracking of mental states in generative agents. In this study, we propose a novel paradigm called ToM-agent, designed to empower LLMs-based generative agents to simulate ToM in open-domain conversational interactions. ToM-agent disentangles the confidence from mental states, facilitating the emulation of an agent's perception of its counterpart's mental states, such as beliefs, desires, and intentions (BDIs). Using past conversation history and verbal reflections, ToM-Agent can dynamically adjust counterparts' inferred BDIs, along with related confidence levels. We further put forth a counterfactual intervention method that reflects on the gap between the predicted responses of counterparts and their real utterances, thereby enhancing the efficiency of reflection. Leveraging empathetic and persuasion dialogue datasets, we assess the advantages of implementing the ToM-agent with downstream tasks, as well as its performance in both the first-order and the \\textit{second-order} ToM. Our findings indicate that the ToM-agent can grasp the underlying reasons for their counterpart's behaviors beyond mere semantic-emotional supporting or decision-making based on common sense, providing new insights for studying large-scale LLMs-based simulation of human social behaviors.",
+      "citations": 4,
+      "arxiv_id": "2501.15355",
+      "doi": "10.48550/arXiv.2501.15355"
+    }
+  ],
+  [
+    12,
+    {
+      "title": "Belief in the Machine: Investigating Epistemological Blind Spots of Language Models",
+      "year": 2024,
+      "authors": "Mirac Suzgun, Tayfun Gur, Federico Bianchi, Daniel E. Ho, Thomas Icard, Dan Jurafsky, James Zou",
+      "url": "https://api.semanticscholar.org/CorpusId:273655169",
+      "relevance": 3,
+      "abstract": "As language models (LMs) become integral to fields like healthcare, law, and journalism, their ability to differentiate between fact, belief, and knowledge is essential for reliable decision-making. Failure to grasp these distinctions can lead to significant consequences in areas such as medical diagnosis, legal judgments, and dissemination of fake news. Despite this, current literature has largely focused on more complex issues such as theory of mind, overlooking more fundamental epistemic challenges. This study systematically evaluates the epistemic reasoning capabilities of modern LMs, including GPT-4, Claude-3, and Llama-3, using a new dataset, KaBLE, consisting of 13,000 questions across 13 tasks. Our results reveal key limitations. First, while LMs achieve 86% accuracy on factual scenarios, their performance drops significantly with false scenarios, particularly in belief-related tasks. Second, LMs struggle with recognizing and affirming personal beliefs, especially when those beliefs contradict factual data, which raises concerns for applications in healthcare and counseling, where engaging with a person's beliefs is critical. Third, we identify a salient bias in how LMs process first-person versus third-person beliefs, performing better on third-person tasks (80.7%) compared to first-person tasks (54.4%). Fourth, LMs lack a robust understanding of the factive nature of knowledge, namely, that knowledge inherently requires truth. Fifth, LMs rely on linguistic cues for fact-checking and sometimes bypass the deeper reasoning. These findings highlight significant concerns about current LMs' ability to reason about truth, belief, and knowledge while emphasizing the need for advancements in these areas before broad deployment in critical sectors.",
+      "citations": 7,
+      "arxiv_id": "2410.21195",
+      "doi": "10.48550/arXiv.2410.21195"
+    }
+  ],
+  [
+    11,
+    {
+      "title": "On the attribution of confidence to large language models",
+      "year": 2024,
+      "authors": "Geoff Keeling, Winnie Street",
+      "url": "https://api.semanticscholar.org/CorpusId:271097704",
+      "relevance": 3,
+      "abstract": "Credences are mental states corresponding to degrees of confidence in propositions. Attribution of credences to Large Language Models (LLMs) is commonplace in the empirical literature on LLM evaluation. Yet the theoretical basis for LLM credence attribution is unclear. We defend three claims. First, our semantic claim is that LLM credence attributions are (at least in general) correctly interpreted literally, as expressing truth-apt beliefs on the part of scientists that purport to describe facts about LLM credences. Second, our metaphysical claim is that the existence of LLM credences is at least plausible, although current evidence is inconclusive. Third, our epistemic claim is that LLM credence attributions made in the empirical literature on LLM evaluation are subject to non-trivial sceptical concerns. It is a distinct possibility that even if LLMs have credences, LLM credence attributions are generally false because the experimental techniques used to assess LLM credences are not truth-tracking.",
+      "citations": 6
+    }
+  ],
+  [
+    11,
+    {
+      "title": "Understanding Epistemic Language with a Language-augmented Bayesian Theory of Mind",
+      "year": 2024,
+      "authors": "Lance Ying, Tan Zhi-Xuan, Lionel Wong, Vikash K. Mansinghka, Joshua B. Tenenbaum",
+      "url": "https://api.semanticscholar.org/CorpusId:271923781",
+      "relevance": 3,
+      "abstract": "\n How do people understand and evaluate claims about others\u2019 beliefs, even though these beliefs cannot be directly observed? In this paper, we introduce a cognitive model of epistemic language interpretation, grounded in Bayesian inferences about other agents\u2019 goals, beliefs, and intentions: a language-augmented Bayesian theory-of-mind (LaBToM). By translating natural language into an epistemic \u201clanguage-of-thought\u201d with grammar-constrained LLM decoding, then evaluating these translations against the inferences produced by inverting a generative model of rational action and perception, LaBToM captures graded plausibility judgments of epistemic claims. We validate our model in an experiment where participants watch an agent navigate a maze to find keys hidden in boxes needed to reach their goal, then rate sentences about the agent\u2019s beliefs. In contrast with multimodal LLMs (GPT-4o, Gemini Pro) and ablated models, our model correlates highly with human judgments for a wide range of expressions, including modal language, uncertainty expressions, knowledge claims, likelihood comparisons, and attributions of false belief.",
+      "citations": 5,
+      "arxiv_id": "2408.12022",
+      "doi": "10.1162/tacl_a_00752"
+    }
+  ],
+  [
+    11,
+    {
+      "title": "Representations of Fact, Fiction and Forecast in Large Language Models: Epistemics and Attitudes",
+      "year": 2025,
+      "authors": "Meng Li, Michael Vrazitulis, David Schlangen",
+      "url": "https://api.semanticscholar.org/CorpusId:279119784",
+      "relevance": 3,
+      "abstract": "Rational speakers are supposed to know what they know and what they do not know, and to generate expressions matching the strength of evidence. In contrast, it is still a challenge for current large language models to generate corresponding utterances based on the assessment of facts and confidence in an uncertain real-world environment. While it has recently become popular to estimate and calibrate confidence of LLMs with verbalized uncertainty, what is lacking is a careful examination of the linguistic knowledge of uncertainty encoded in the latent space of LLMs. In this paper, we draw on typological frameworks of epistemic expressions to evaluate LLMs' knowledge of epistemic modality, using controlled stories. Our experiments show that the performance of LLMs in generating epistemic expressions is limited and not robust, and hence the expressions of uncertainty generated by LLMs are not always reliable. To build uncertainty-aware LLMs, it is necessary to enrich semantic knowledge of epistemic modality in LLMs.",
+      "citations": 0
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Evaluating large language models in theory of mind tasks",
+      "year": 2023,
+      "authors": "Michal Kosinski",
+      "url": "https://api.semanticscholar.org/CorpusId:256616268",
+      "relevance": 3,
+      "abstract": "Significance Humans automatically and effortlessly track others\u2019 unobservable mental states, such as their knowledge, intentions, beliefs, and desires. This ability\u2014typically called \u201ctheory of mind\u201d (ToM)\u2014is fundamental to human social interactions, communication, empathy, consciousness, moral judgment, and religious beliefs. Our results show that recent large language models (LLMs) can solve false-belief tasks, typically used to evaluate ToM in humans. Regardless of how we interpret these outcomes, they signify the advent of more powerful and socially skilled AI\u2014with profound positive and negative implications.",
+      "citations": 261,
+      "arxiv_id": "2302.02083",
+      "doi": "10.1073/pnas.2405460121"
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Theory of Mind for Multi-Agent Collaboration via Large Language Models",
+      "year": 2023,
+      "authors": "Huao Li, Yu Quan Chong, Simon Stepputtis, Joseph Campbell, Dana Hughes, Michael Lewis, Katia P. Sycara",
+      "url": "https://www.semanticscholar.org/paper/e17c58d7a48b6b811df023484161a3b9c03e0d6b",
+      "relevance": 3,
+      "abstract": "While Large Language Models (LLMs) have demonstrated impressive accomplishments in both reasoning and planning, their abilities in multi-agent collaborations remains largely unexplored. This study evaluates LLM-based agents in a multi-agent cooperative text game with Theory of Mind (ToM) inference tasks, comparing their performance with Multi-Agent Reinforcement Learning (MARL) and planning-based baselines. We observed evidence of emergent collaborative behaviors and high-order Theory of Mind capabilities among LLM-based agents. Our results reveal limitations in LLM-based agents' planning optimization due to systematic failures in managing long-horizon contexts and hallucination about the task state. We explore the use of explicit belief state representations to mitigate these issues, finding that it enhances task performance and the accuracy of ToM inferences for LLM-based agents.",
+      "citations": 128
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Minding Language Models\u2019 (Lack of) Theory of Mind: A Plug-and-Play Multi-Character Belief Tracker",
+      "year": 2023,
+      "authors": "Melanie Sclar, Sachin Kumar, Peter West, Alane Suhr, Yejin Choi, Yulia Tsvetkov",
+      "url": "https://www.semanticscholar.org/paper/d7a3f5c612930a3c08f1632b88934252edc66d67",
+      "relevance": 3,
+      "abstract": "Theory of Mind (ToM)\u2014the ability to reason about the mental states of other people\u2014is a key element of our social intelligence. Yet, despite their ever more impressive performance, large-scale neural language models still lack basic theory of mind capabilities out-of-the-box. We posit that simply scaling up models will not imbue them with theory of mind due to the inherently symbolic and implicit nature of the phenomenon, and instead investigate an alternative: can we design a decoding-time algorithm that enhances theory of mind of off-the-shelf neural language models without explicit supervision? We present SymbolicToM, a plug-and-play approach to reason about the belief states of multiple characters in reading comprehension tasks via explicit symbolic representation. More concretely, our approach tracks each entity\u2019s beliefs, their estimation of other entities\u2019 beliefs, and higher-order levels of reasoning, all through graphical representations, allowing for more precise and interpretable reasoning than previous approaches. Empirical results on the well-known ToMi benchmark (Le et al., 2019) demonstrate that SymbolicToM dramatically enhances off-the-shelf neural networks\u2019 theory of mind in a zero-shot setting while showing robust out-of-distribution performance compared to supervised baselines. Our work also reveals spurious patterns in existing theory of mind benchmarks, emphasizing the importance of out-of-distribution evaluation and methods that do not overfit a particular dataset.",
+      "citations": 107,
+      "arxiv_id": "2306.00924",
+      "doi": "10.48550/arXiv.2306.00924"
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Think Twice: Perspective-Taking Improves Large Language Models' Theory-of-Mind Capabilities",
+      "year": 2023,
+      "authors": "Alex Wilf, Sihyun Shawn Lee, Paul Pu Liang, Louis-philippe Morency",
+      "url": "https://www.semanticscholar.org/paper/0aa150619e07fa41492517368beaaf8ae56fe061",
+      "relevance": 3,
+      "abstract": "Human interactions are deeply rooted in the interplay of thoughts, beliefs, and desires made possible by Theory of Mind (ToM): our cognitive ability to understand the mental states of ourselves and others. Although ToM may come naturally to us, emulating it presents a challenge to even the most advanced Large Language Models (LLMs). Recent improvements to LLMs' reasoning capabilities from simple yet effective prompting techniques such as Chain-of-Thought have seen limited applicability to ToM. In this paper, we turn to the prominent cognitive science theory\"Simulation Theory\"to bridge this gap. We introduce SimToM, a novel two-stage prompting framework inspired by Simulation Theory's notion of perspective-taking. To implement this idea on current ToM benchmarks, SimToM first filters context based on what the character in question knows before answering a question about their mental state. Our approach, which requires no additional training and minimal prompt-tuning, shows substantial improvement over existing methods, and our analysis reveals the importance of perspective-taking to Theory-of-Mind capabilities. Our findings suggest perspective-taking as a promising direction for future research into improving LLMs' ToM capabilities.",
+      "citations": 79
+    }
+  ],
+  [
+    10,
+    {
+      "title": "How FaR Are Large Language Models From Agents with Theory-of-Mind?",
+      "year": 2023,
+      "authors": "Pei Zhou, Aman Madaan, Srividya Pranavi Potharaju, Aditya Gupta, Kevin R. McKee, Ari Holtzman, J. Pujara, Xiang Ren, Swaroop Mishra, Aida Nematzadeh, Shyam Upadhyay, Manaal Faruqui",
+      "url": "https://www.semanticscholar.org/paper/ed40889e11e812ef33578506844be06d713f6092",
+      "relevance": 3,
+      "abstract": "\"Thinking is for Doing.\"Humans can infer other people's mental states from observations--an ability called Theory-of-Mind (ToM)--and subsequently act pragmatically on those inferences. Existing question answering benchmarks such as ToMi ask models questions to make inferences about beliefs of characters in a story, but do not test whether models can then use these inferences to guide their actions. We propose a new evaluation paradigm for large language models (LLMs): Thinking for Doing (T4D), which requires models to connect inferences about others' mental states to actions in social scenarios. Experiments on T4D demonstrate that LLMs such as GPT-4 and PaLM 2 seemingly excel at tracking characters' beliefs in stories, but they struggle to translate this capability into strategic action. Our analysis reveals the core challenge for LLMs lies in identifying the implicit inferences about mental states without being explicitly asked about as in ToMi, that lead to choosing the correct action in T4D. To bridge this gap, we introduce a zero-shot prompting framework, Foresee and Reflect (FaR), which provides a reasoning structure that encourages LLMs to anticipate future challenges and reason about potential actions. FaR boosts GPT-4's performance from 50% to 71% on T4D, outperforming other prompting methods such as Chain-of-Thought and Self-Ask. Moreover, FaR generalizes to diverse out-of-distribution story structures and scenarios that also require ToM inferences to choose an action, consistently outperforming other methods including few-shot in-context learning.",
+      "citations": 69,
+      "arxiv_id": "2310.03051",
+      "doi": "10.48550/arXiv.2310.03051"
+    }
+  ],
+  [
+    10,
+    {
+      "title": "HI-TOM: A Benchmark for Evaluating Higher-Order Theory of Mind Reasoning in Large Language Models",
+      "year": 2023,
+      "authors": "Yinghui He, Yufan Wu, Yilin Jia, Rada Mihalcea, Yulong Chen, Naihao Deng",
+      "url": "https://www.semanticscholar.org/paper/2361bae8f0ff3627a91408c172e6612b4d554cf2",
+      "relevance": 3,
+      "abstract": "Theory of Mind (ToM) is the ability to reason about one's own and others' mental states. ToM plays a critical role in the development of intelligence, language understanding, and cognitive processes. While previous work has primarily focused on first and second-order ToM, we explore higher-order ToM, which involves recursive reasoning on others' beliefs. We introduce HI-TOM, a Higher Order Theory of Mind benchmark. Our experimental evaluation using various Large Language Models (LLMs) indicates a decline in performance on higher-order ToM tasks, demonstrating the limitations of current LLMs. We conduct a thorough analysis of different failure cases of LLMs, and share our thoughts on the implications of our findings on the future of NLP.",
+      "citations": 48
+    }
+  ],
+  [
+    10,
+    {
+      "title": "NegotiationToM: A Benchmark for Stress-testing Machine Theory of Mind on Negotiation Surrounding",
+      "year": 2024,
+      "authors": "Chunkit Chan, Cheng Jiayang, Yauwai Yim, Zheye Deng, Wei Fan, Haoran Li, Xin Liu, Hongming Zhang, Weiqi Wang, Yangqiu Song",
+      "url": "https://www.semanticscholar.org/paper/eebb45d3d4e122c3d776bff33fd82989c669406f",
+      "relevance": 3,
+      "abstract": "Large Language Models (LLMs) have sparked substantial interest and debate concerning their potential emergence of Theory of Mind (ToM) ability. Theory of mind evaluations currently focuses on testing models using machine-generated data or game settings prone to shortcuts and spurious correlations, which lacks evaluation of machine ToM ability in real-world human interaction scenarios. This poses a pressing demand to develop new real-world scenario benchmarks. We introduce NegotiationToM, a new benchmark designed to stress-test machine ToM in real-world negotiation surrounding covered multi-dimensional mental states (i.e., desires, beliefs, and intentions). Our benchmark builds upon the Belief-Desire-Intention (BDI) agent modeling theory and conducts the necessary empirical experiments to evaluate large language models. Our findings demonstrate that NegotiationToM is challenging for state-of-the-art LLMs, as they consistently perform significantly worse than humans, even when employing the chain-of-thought (CoT) method.",
+      "citations": 39
+    }
+  ],
+  [
+    10,
+    {
+      "title": "MindGames: Targeting Theory of Mind in Large Language Models with Dynamic Epistemic Modal Logic",
+      "year": 2023,
+      "authors": "Damien Sileo, Antoine Lernould",
+      "url": "https://www.semanticscholar.org/paper/b6ccdd0eb776eee6b317d235e457f20175f380ff",
+      "relevance": 3,
+      "abstract": "Theory of Mind (ToM) is a critical component of intelligence, yet accurately measuring it continues to be a subject of debate. Prior research has attempted to apply human ToM assessments to natural language processing models using either human-created standardized tests or rule-based templates. However, these methods primarily focus on simplistic reasoning and require further validation. In this study, we utilize dynamic epistemic logic, which has established overlaps with ToM, to generate more intricate problems. We also introduce novel verbalization techniques to express these problems using natural language. Our findings indicate that certain language model scaling (from 70M to 6B and 350M to 174B) does not consistently yield results better than random chance. While GPT-4 demonstrates improved epistemic reasoning capabilities, there is still room for enhancement. Our code and datasets are publicly available https://github.com/antoinelrnld/modlog https://huggingface.co/datasets/sileod/mindgames",
+      "citations": 32
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Unveiling Theory of Mind in Large Language Models: A Parallel to Single Neurons in the Human Brain",
+      "year": 2023,
+      "authors": "Mohsen Jamali, Ziv Williams, Jing Cai",
+      "url": "https://www.semanticscholar.org/paper/e29414150d604191df0f59c30d8c39fca438d3c2",
+      "relevance": 3,
+      "abstract": "With their recent development, large language models (LLMs) have been found to exhibit a certain level of Theory of Mind (ToM), a complex cognitive capacity that is related to our conscious mind and that allows us to infer another's beliefs and perspective. While human ToM capabilities are believed to derive from the neural activity of a broadly interconnected brain network, including that of dorsal medial prefrontal cortex (dmPFC) neurons, the precise processes underlying LLM's capacity for ToM or their similarities with that of humans remains largely unknown. In this study, we drew inspiration from the dmPFC neurons subserving human ToM and employed a similar methodology to examine whether LLMs exhibit comparable characteristics. Surprisingly, our analysis revealed a striking resemblance between the two, as hidden embeddings (artificial neurons) within LLMs started to exhibit significant responsiveness to either true- or false-belief trials, suggesting their ability to represent another's perspective. These artificial embedding responses were closely correlated with the LLMs' performance during the ToM tasks, a property that was dependent on the size of the models. Further, the other's beliefs could be accurately decoded using the entire embeddings, indicating the presence of the embeddings' ToM capability at the population level. Together, our findings revealed an emergent property of LLMs' embeddings that modified their activities in response to ToM features, offering initial evidence of a parallel between the artificial model and neurons in the human brain.",
+      "citations": 20
+    }
+  ],
+  [
+    10,
+    {
+      "title": "TimeToM: Temporal Space is the Key to Unlocking the Door of Large Language Models' Theory-of-Mind",
+      "year": 2024,
+      "authors": "Guiyang Hou, Wenqi Zhang, Yongliang Shen, Linjuan Wu, Weiming Lu",
+      "url": "https://api.semanticscholar.org/CorpusId:270869712",
+      "relevance": 3,
+      "abstract": "Theory of Mind (ToM)-the cognitive ability to reason about mental states of ourselves and others, is the foundation of social interaction. Although ToM comes naturally to humans, it poses a significant challenge to even the most advanced Large Language Models (LLMs). Due to the complex logical chains in ToM reasoning, especially in higher-order ToM questions, simply utilizing reasoning methods like Chain of Thought (CoT) will not improve the ToM capabilities of LLMs. We present TimeToM, which constructs a temporal space and uses it as the foundation to improve the ToM capabilities of LLMs in multiple scenarios. Specifically, within the temporal space, we construct Temporal Belief State Chain (TBSC) for each character and inspired by the cognition perspective of the social world model, we divide TBSC into self-world beliefs and social world beliefs, aligning with first-order ToM (first-order beliefs) and higher-order ToM (higher-order beliefs) questions, respectively. Moreover, we design a novel tool-belief solver that, by considering belief communication between characters in temporal space, can transform a character's higher-order beliefs into another character's first-order beliefs under belief communication period. Experimental results indicate that TimeToM can dramatically improve the reasoning performance of LLMs on ToM questions while taking a big step towards coherent and robust ToM reasoning.",
+      "citations": 19
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Language Models Represent Beliefs of Self and Others",
+      "year": 2024,
+      "authors": "Wentao Zhu, Zhining Zhang, Yizhou Wang",
+      "url": "https://api.semanticscholar.org/CorpusId:268041304",
+      "relevance": 3,
+      "abstract": "Understanding and attributing mental states, known as Theory of Mind (ToM), emerges as a fundamental capability for human social reasoning. While Large Language Models (LLMs) appear to possess certain ToM abilities, the mechanisms underlying these capabilities remain elusive. In this study, we discover that it is possible to linearly decode the belief status from the perspectives of various agents through neural activations of language models, indicating the existence of internal representations of self and others' beliefs. By manipulating these representations, we observe dramatic changes in the models' ToM performance, underscoring their pivotal role in the social reasoning process. Additionally, our findings extend to diverse social reasoning tasks that involve different causal inference patterns, suggesting the potential generalizability of these representations.",
+      "citations": 16
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Perceptions to Beliefs: Exploring Precursory Inferences for Theory of Mind in Large Language Models",
+      "year": 2024,
+      "authors": "Chani Jung, Dongkwan Kim, Jiho Jin, Jiseon Kim, Yeon Seonwoo, Yejin Choi, Alice Oh, Hyunwoo Kim",
+      "url": "https://api.semanticscholar.org/CorpusId:271050238",
+      "relevance": 3,
+      "abstract": "While humans naturally develop theory of mind (ToM), the capability to understand other people\u2019s mental states and beliefs, state-of-the-art large language models (LLMs) underperform on simple ToM benchmarks. We posit that we can extend our understanding of LLMs\u2019 ToM abilities by evaluating key human ToM precursors-perception inference and perception-to-belief inference-in LLMs. We introduce two datasets, Percept-ToMi and Percept-FANToM, to evaluate these precursory inferences for ToM in LLMs by annotating characters\u2019 perceptions on ToMi and FANToM, respectively.Our evaluation of eight state-of-the-art LLMs reveals that the models generally perform well in perception inference while exhibiting limited capability in perception-to-belief inference (e.g., lack of inhibitory control).Based on these results, we present PercepToM, a novel ToM method leveraging LLMs\u2019 strong perception inference capability while supplementing their limited perception-to-belief inference. Experimental results demonstrate that PercepToM significantly enhances LLM\u2019s performance, especially in false belief scenarios.",
+      "citations": 16,
+      "arxiv_id": "2407.06004",
+      "doi": "10.48550/arXiv.2407.06004"
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Language Models use Lookbacks to Track Beliefs",
+      "year": 2025,
+      "authors": "Nikhil Prakash, Natalie Shapira, Arnab Sen Sharma, Christoph Riedl, Yonatan Belinkov, Tamar Rott Shaham, David Bau, Atticus Geiger",
+      "url": "https://api.semanticscholar.org/CorpusId:278768565",
+      "relevance": 3,
+      "abstract": "How do language models (LMs) represent characters'beliefs, especially when those beliefs may differ from reality? This question lies at the heart of understanding the Theory of Mind (ToM) capabilities of LMs. We analyze LMs'ability to reason about characters'beliefs using causal mediation and abstraction. We construct a dataset, CausalToM, consisting of simple stories where two characters independently change the state of two objects, potentially unaware of each other's actions. Our investigation uncovers a pervasive algorithmic pattern that we call a lookback mechanism, which enables the LM to recall important information when it becomes necessary. The LM binds each character-object-state triple together by co-locating their reference information, represented as Ordering IDs (OIs), in low-rank subspaces of the state token's residual stream. When asked about a character's beliefs regarding the state of an object, the binding lookback retrieves the correct state OI and then the answer lookback retrieves the corresponding state token. When we introduce text specifying that one character is (not) visible to the other, we find that the LM first generates a visibility ID encoding the relation between the observing and the observed character OIs. In a visibility lookback, this ID is used to retrieve information about the observed character and update the observing character's beliefs. Our work provides insights into belief tracking mechanisms, taking a step toward reverse-engineering ToM reasoning in LMs.",
+      "citations": 13
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Language models cannot reliably distinguish belief from knowledge and fact",
+      "year": 2025,
+      "authors": "Mirac Suzgun, Tayfun Gur, Federico Bianchi, Daniel E. Ho, Thomas Icard, Dan Jurafsky, James Y. Zou",
+      "url": "https://www.semanticscholar.org/paper/6671194eb9913f3276c60a822391834e87216bfd",
+      "relevance": 3,
+      "abstract": "",
+      "citations": 10
+    }
+  ],
+  [
+    10,
+    {
+      "title": "Comparing Humans and Large Language Models on an Experimental Protocol Inventory for Theory of Mind Evaluation (EPITOME)",
+      "year": 2024,
+      "authors": "Cameron R. Jones, Sean Trott, Benjamin K. Bergen",
+      "url": "https://www.semanticscholar.org/paper/89b91bd0ee16ab97a0c2d45aa710bdc54a3a09aa",
+      "relevance": 3,
+      "abstract": "Abstract We address a growing debate about the extent to which large language models (LLMs) produce behavior consistent with Theory of Mind (ToM) in humans. We present EPITOME: a battery of six experiments that tap diverse ToM capacities, including belief attribution, emotional inference, and pragmatic reasoning. We elicit a performance baseline from human participants for each task. We use the dataset to ask whether distributional linguistic information learned by LLMs is sufficient to explain ToM in humans. We compare performance of five LLMs to a baseline of responses from human comprehenders. Results are mixed. LLMs display considerable sensitivity to mental states and match human performance in several tasks. Yet, they commit systematic errors in others, especially those requiring pragmatic reasoning on the basis of mental state information. Such uneven performance indicates that human-level ToM may require resources beyond distributional information.",
+      "citations": 10
+    }
+  ]
+]

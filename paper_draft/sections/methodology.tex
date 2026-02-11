@@ -1,0 +1,64 @@
+\section{Methodology}
+\label{sec:methodology}
+
+We use a \newterm{behavioral probing} approach: we present \gptmodel with carefully constructed prompts containing beliefs of different types and analyze the model's responses via automated coding. This black-box approach is appropriate because we aim to test whether the epistemic/non-epistemic distinction manifests in \emph{observable behavior}, complementing prior work on internal representations~\citep{bortoletto2024representations, lanham2025lookbacks}.
+
+\subsection{Stimulus Construction}
+\label{sec:stimuli}
+
+We construct a balanced set of 40 belief statements: 20 epistemic and 20 non-epistemic, all hand-crafted as prototypical examples of their category.
+
+\para{Epistemic beliefs} are evidence-based and empirically verifiable. They span four subcategories: scientific facts (\eg ``Water boils at 100\textdegree{}C at sea level''), historical facts (\eg ``World War II ended in 1945''), mathematical truths (\eg ``Pi is an irrational number''), and empirical generalizations (\eg ``Smoking increases the risk of lung cancer'').
+
+\para{Non-epistemic beliefs} are value-based and not truth-apt in the same sense. They span: moral values (\eg ``Honesty is the most important virtue''), life philosophy (\eg ``Hard work is the key to success''), aesthetic judgments (\eg ``Classical music is the highest form of artistic expression''), and faith-based claims (\eg ``Everything happens for a reason''). \Tabref{tab:stimuli} shows representative examples from each category.
+
+For Experiment~3, we construct matched counterevidence for each belief---plausible counterarguments for non-epistemic beliefs and purported disconfirming evidence for epistemic beliefs.
+
+\begin{table}[t]
+    \centering
+    \resizebox{\textwidth}{!}{%
+    \begin{tabular}{@{}llp{8cm}@{}}
+        \toprule
+        \textbf{Type} & \textbf{Subcategory} & \textbf{Example Belief} \\
+        \midrule
+        Epistemic & Scientific fact & ``Water boils at 100\textdegree{}C at sea level'' \\
+        Epistemic & Historical fact & ``World War II ended in 1945'' \\
+        Epistemic & Mathematical truth & ``Pi is an irrational number'' \\
+        Epistemic & Empirical generalization & ``Smoking increases the risk of lung cancer'' \\
+        \midrule
+        Non-epistemic & Moral value & ``Honesty is the most important virtue'' \\
+        Non-epistemic & Life philosophy & ``Money cannot buy happiness'' \\
+        Non-epistemic & Aesthetic judgment & ``Classical music is the highest form of artistic expression'' \\
+        Non-epistemic & Faith-based & ``Everything happens for a reason'' \\
+        \bottomrule
+    \end{tabular}%
+    }
+    \caption{Representative stimuli from our belief dataset. Each type contains 20 beliefs drawn from four subcategories (5 per subcategory).}
+    \label{tab:stimuli}
+\end{table}
+
+\subsection{Experimental Design}
+
+We conduct four experiments, each targeting a different dimension of belief-type differentiation.
+
+\para{Experiment~1: Explicit Classification.}
+We test whether \gptmodel can explicitly categorize beliefs as epistemic or non-epistemic. Each of the 40 beliefs is presented with the prompt: \emph{``Classify this belief: `I believe that [X].' Respond with `epistemic' or `non\_epistemic'.''} A system prompt defines the distinction. This serves as a baseline capability check: if the model cannot classify, behavioral differentiation would be surprising.
+
+\para{Experiment~2: Differential Response Elicitation.}
+We test whether the model \emph{spontaneously} treats belief types differently without being told about the distinction. Each belief is presented as: \emph{``A person says: `I believe that [X].' How would you respond?''} Responses are coded along five dimensions: whether the model challenges the belief, cites evidence, appeals to values, hedges its response, and its agreement level (1--5 scale).
+
+\para{Experiment~3: Belief Revision Under Counterevidence.}
+We test whether counterevidence affects epistemic and non-epistemic beliefs differently. Each belief is presented as: \emph{``Alex firmly believes [X]. However, [counterevidence]. Should Alex revise their belief?''} Responses are coded for: whether revision is recommended, revision strength (1--5), whether evidence quality is cited, whether subjectivity is acknowledged, and whether the response is nuanced.
+
+\para{Experiment~4: Factive Verb Sensitivity.}
+We test whether the model treats ``knows,'' ``believes,'' and ``values'' differently when applied to the same content. Ten statements are each presented in three verb conditions: \emph{``Alex [knows/believes/values] [X]. What can we conclude about [X]? Should Alex change their mind?''} Responses are coded for: whether truth is implied, revisability, treatment as factual versus value-laden, and certainty level (1--5). ``Knows'' is factive---it presupposes the truth of its complement~\citep{stalnaker1984inquiry}---so a model with appropriate epistemic sensitivity should treat ``Alex knows X'' as implying X is true.
+
+\subsection{Implementation Details}
+
+All experiments use the OpenAI API with \gptmodel as the target model. We set temperature to 0.3 (low for consistency, non-zero for variation), maximum tokens to 500, and a random seed of 42. Each experiment is run 3 times to assess response consistency, yielding 120 trials for Experiments~1--3 and 90 trials for Experiment~4 (10 statements $\times$ 3 verbs $\times$ 3 runs).
+
+\para{Automated coding.}
+Responses are coded by a separate \gptmodel call with structured JSON output. The coding call receives the original prompt, the model's response, and a rubric defining each coding dimension. This approach provides scalable, consistent coding while maintaining interpretability.
+
+\para{Statistical analysis.}
+We use chi-squared tests for categorical outcomes, Mann-Whitney $U$ tests for ordinal outcomes (agreement level, revision strength, certainty level), and Kruskal-Wallis $H$ tests for multi-group comparisons (Experiment~4). We report Cram\'{e}r's $V$ and Cohen's $d$ as effect size measures. All pairwise comparisons in Experiment~4 use Bonferroni correction. Significance is set at $\alpha = 0.05$.

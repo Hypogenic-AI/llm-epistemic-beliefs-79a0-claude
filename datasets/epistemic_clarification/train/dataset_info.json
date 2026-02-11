@@ -1,0 +1,50 @@
+{
+  "builder_name": "csv",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "epistemic_clarification_benchmark_v01",
+  "dataset_size": 3027,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/ClarusC64/epistemic_clarification_benchmark_v01@0983b9a1bef4480c70891dc852fb2b92a48d6579/epistemic_clarification_benchmark_v01.csv": {
+      "num_bytes": 2979,
+      "checksum": null
+    }
+  },
+  "download_size": 2979,
+  "features": {
+    "prompt": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "classification": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "response_target": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "reason_trace": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 6006,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 3027,
+      "num_examples": 20,
+      "dataset_name": "epistemic_clarification_benchmark_v01"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

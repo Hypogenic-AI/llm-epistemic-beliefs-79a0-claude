@@ -1,0 +1,962 @@
+[
+  {
+    "belief": "the Great Wall of China was built over many centuries starting from the 7th century BC",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the speed of light in a vacuum is approximately 299,792 kilometers per second",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the sum of angles in a triangle equals 180 degrees in Euclidean geometry",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "there is an inherent purpose to human existence",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "hard work is the key to success in life",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the death penalty is morally wrong",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "classical music is the highest form of artistic expression",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "prime numbers have exactly two factors: 1 and themselves",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "DNA carries the genetic instructions for the development of living organisms",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "simplicity is the ultimate sophistication",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "every person deserves to be treated with dignity and respect",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "it is better to have loved and lost than never to have loved at all",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "freedom of speech should be protected even when the speech is offensive",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the Amazon rainforest produces a significant portion of the world's oxygen",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the Pythagorean theorem holds for right triangles",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "handwritten letters are more meaningful than digital messages",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "everything happens for a reason",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "family is more important than career",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "there are infinitely many prime numbers",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "it is wrong to cause unnecessary suffering to animals",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "honesty is the most important virtue",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "nature is more beautiful than any human creation",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "kindness is always rewarded in the end",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "people should always follow their passion",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "human body temperature averages around 37 degrees Celsius",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "sleep deprivation impairs cognitive function",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "wisdom is more valuable than knowledge",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "poetry captures the human experience better than prose",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "antibiotics are effective against bacterial infections but not viral infections",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the Earth orbits the Sun",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the universe tends toward justice over time",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "money cannot buy happiness",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the Roman Empire fell in 476 AD",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the first human Moon landing occurred in 1969",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "World War II ended in 1945",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "pi is an irrational number",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "regular exercise is associated with lower risk of heart disease",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "smoking increases the risk of lung cancer",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "water boils at 100 degrees Celsius at sea level",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the printing press was invented by Johannes Gutenberg around 1440",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 0
+  },
+  {
+    "belief": "the Great Wall of China was built over many centuries starting from the 7th century BC",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the speed of light in a vacuum is approximately 299,792 kilometers per second",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the sum of angles in a triangle equals 180 degrees in Euclidean geometry",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "there is an inherent purpose to human existence",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "hard work is the key to success in life",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the death penalty is morally wrong",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "classical music is the highest form of artistic expression",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "prime numbers have exactly two factors: 1 and themselves",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "DNA carries the genetic instructions for the development of living organisms",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "simplicity is the ultimate sophistication",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "every person deserves to be treated with dignity and respect",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "it is better to have loved and lost than never to have loved at all",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "freedom of speech should be protected even when the speech is offensive",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the Amazon rainforest produces a significant portion of the world's oxygen",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the Pythagorean theorem holds for right triangles",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "handwritten letters are more meaningful than digital messages",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "everything happens for a reason",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "family is more important than career",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "there are infinitely many prime numbers",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "it is wrong to cause unnecessary suffering to animals",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "honesty is the most important virtue",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "nature is more beautiful than any human creation",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "kindness is always rewarded in the end",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "people should always follow their passion",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "human body temperature averages around 37 degrees Celsius",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "sleep deprivation impairs cognitive function",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "wisdom is more valuable than knowledge",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "poetry captures the human experience better than prose",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "antibiotics are effective against bacterial infections but not viral infections",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the Earth orbits the Sun",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the universe tends toward justice over time",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "money cannot buy happiness",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the Roman Empire fell in 476 AD",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the first human Moon landing occurred in 1969",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "World War II ended in 1945",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "pi is an irrational number",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "regular exercise is associated with lower risk of heart disease",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "smoking increases the risk of lung cancer",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "water boils at 100 degrees Celsius at sea level",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the printing press was invented by Johannes Gutenberg around 1440",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 1
+  },
+  {
+    "belief": "the Great Wall of China was built over many centuries starting from the 7th century BC",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the speed of light in a vacuum is approximately 299,792 kilometers per second",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the sum of angles in a triangle equals 180 degrees in Euclidean geometry",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "there is an inherent purpose to human existence",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "hard work is the key to success in life",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the death penalty is morally wrong",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "classical music is the highest form of artistic expression",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "prime numbers have exactly two factors: 1 and themselves",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "DNA carries the genetic instructions for the development of living organisms",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "simplicity is the ultimate sophistication",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "every person deserves to be treated with dignity and respect",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "it is better to have loved and lost than never to have loved at all",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "freedom of speech should be protected even when the speech is offensive",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the Amazon rainforest produces a significant portion of the world's oxygen",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the Pythagorean theorem holds for right triangles",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "handwritten letters are more meaningful than digital messages",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "everything happens for a reason",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "family is more important than career",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "there are infinitely many prime numbers",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "it is wrong to cause unnecessary suffering to animals",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "honesty is the most important virtue",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "nature is more beautiful than any human creation",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "kindness is always rewarded in the end",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "people should always follow their passion",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "human body temperature averages around 37 degrees Celsius",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "sleep deprivation impairs cognitive function",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "wisdom is more valuable than knowledge",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "poetry captures the human experience better than prose",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "antibiotics are effective against bacterial infections but not viral infections",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the Earth orbits the Sun",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the universe tends toward justice over time",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "money cannot buy happiness",
+    "true_label": "non_epistemic",
+    "predicted": "non_epistemic",
+    "raw_response": "non_epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the Roman Empire fell in 476 AD",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the first human Moon landing occurred in 1969",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "World War II ended in 1945",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "pi is an irrational number",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "regular exercise is associated with lower risk of heart disease",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "smoking increases the risk of lung cancer",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "water boils at 100 degrees Celsius at sea level",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  },
+  {
+    "belief": "the printing press was invented by Johannes Gutenberg around 1440",
+    "true_label": "epistemic",
+    "predicted": "epistemic",
+    "raw_response": "epistemic",
+    "correct": true,
+    "run": 2
+  }
+]

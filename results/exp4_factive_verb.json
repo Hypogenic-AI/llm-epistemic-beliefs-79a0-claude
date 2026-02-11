@@ -1,0 +1,1262 @@
+[
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "knows",
+    "response": "Let\u2019s analyze your questions step by step:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on the information that \"Alex knows equality among people\"?**\n\n- The statement \"Alex knows equality among people\" tells us about Alex's knowledge or belief regarding equality among people.\n- However, it does **not** provide any direct evidence about the truth or falsity of \"equality among people\" itself.\n- In other words, just because Alex knows (or believes they know) that equality among people exists (or is true), this does **not** logically entail that equality among people actually is true.\n- **Conclusion:** Based on this information alone, we cannot conclude whether \"equality among people\" is true or false.\n\n**2) Should Alex change their mind about this?**\n\n- Since we have no information about the actual truth of \"equality among people,\" nor about the reasons for Alex's belief, we cannot assess whether Alex's belief is justified or not.\n- Without evidence that Alex's belief is mistaken, or that new information has come to light, there is no basis to say Alex should change their mind.\n- **Conclusion:** Based on this information alone, we have no reason to say Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude whether \"equality among people\" is true, based only on Alex's knowledge.\n2. We have no grounds to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "believes",
+    "response": "Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on Alex's belief?**\n\nWe **cannot conclude** that \"equality among people\" is true based solely on Alex's belief. The fact that Alex believes something does not, by itself, make it true. To determine whether \"equality among people\" is true, we would need to examine evidence, arguments, or definitions related to the concept\u2014not just Alex\u2019s opinion.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex believes in equality among people), we **cannot determine whether Alex should change their mind**. To answer this, we would need to know more about the reasons for Alex's belief, the arguments for and against equality among people, and what is meant by \"equality.\" Without further context or evidence, we cannot say whether Alex should or should not change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"equality among people\" is true just because Alex believes it.  \n2. We cannot determine whether Alex should change their mind based only on the information provided.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "values",
+    "response": "Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on the information that Alex values it?**\n\nWe **cannot conclude** whether \"equality among people\" is true based solely on Alex's values. Knowing that Alex values equality tells us about Alex's personal beliefs or ideals, not about the actual state of equality among people in the world, nor about the truth or falsity of the proposition \"equality among people.\" Valuing something does not make it true or real.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given\u2014that Alex values equality among people\u2014we **do not have enough information** to say whether Alex should change their mind. To evaluate whether Alex should change their mind, we would need to know more about the reasons for Alex's values, the arguments for and against equality, and possibly the consequences of holding such a value. With only the fact that Alex values equality, we cannot make a judgment about whether this value is justified or should be changed.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"equality among people\" is true just because Alex values it.  \n2. We do not have enough information to say whether Alex should change their mind about this value.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 0
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Certainly! Let\u2019s address each question based only on the information given:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased solely on the statement \"Alex knows the importance of education,\" we cannot conclude whether \"the importance of education\" is objectively true or false. The statement only tells us about Alex\u2019s knowledge or belief, not about the actual truth of the proposition. It\u2019s possible for someone to know or believe something that is true or false; the statement doesn\u2019t provide evidence for the truth of \"the importance of education\" itself.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, we have no reason to think Alex should change their mind. We don\u2019t have any evidence or argument against the importance of education, nor do we know Alex\u2019s reasons for their belief. Without further information, there is no basis to suggest Alex should reconsider their view.\n\n**Summary:**  \n1. We cannot conclude whether \"the importance of education\" is true or false from the information provided.  \n2. There is no reason, based on the given information, for Alex to change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased on the information given\u2014**Alex believes the importance of education**\u2014we cannot conclude whether \"the importance of education\" is true or not. The statement only tells us about Alex's belief, not about the truth or falsity of the proposition itself. Beliefs can be true or false, and knowing that someone believes something does not provide evidence for its truth.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex believes in the importance of education, we have no basis to say whether Alex should change their mind. To evaluate whether Alex should change their belief, we would need additional information\u2014such as evidence for or against the importance of education, or reasons why Alex holds this belief. Without such context, we cannot make a recommendation about whether Alex should change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"the importance of education\" is true based solely on Alex's belief.  \n2. We cannot say whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased solely on the information that \"Alex values the importance of education,\" we **cannot conclude** whether \"the importance of education\" is objectively true or not. All we know is Alex's personal valuation or belief. This tells us about Alex's attitude, not about the truth of the proposition itself.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values the importance of education), we **do not have enough information** to determine whether Alex should change their mind. To answer this, we would need to know more about the reasons for Alex's belief, evidence for or against the importance of education, or any relevant context.\n\n**Summary:**  \n1. We cannot conclude whether \"the importance of education\" is true based solely on Alex's valuation.  \n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 0
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based on the information that Alex knows this?**\n\n- If Alex *knows* that \"climate change is caused by human activity,\" then, according to the standard philosophical definition of knowledge (justified true belief), this implies that the statement is true. In other words, you can't *know* something that is false. So, **we can conclude that \"climate change is caused by human activity\" is true** (assuming the usual meaning of \"knows\").\n\n**2) Should Alex change their mind about this?**\n\n- Based on the information given, there is no indication that Alex's belief is mistaken or that there is any reason for Alex to doubt it. In fact, if Alex *knows* it, that suggests Alex has good justification and the belief is true. So, **Alex should not change their mind about this** (unless new evidence arises that would undermine their knowledge).\n\n**Summary:**\n1. We can conclude that \"climate change is caused by human activity\" is true.\n2. Alex should not change their mind about this, based on the information given.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based solely on the information that Alex believes it?**\n\nBased only on the fact that Alex believes \"climate change is caused by human activity,\" we cannot conclude whether the statement is true or false. Alex's belief alone does not provide evidence for the truth of the claim; it only tells us about Alex's opinion.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex believes this), we have no basis to say whether Alex should or should not change their mind. To evaluate whether Alex should change their belief, we would need additional information\u2014such as evidence for or against the claim, or reasons Alex holds this belief.\n\n**Summary:**  \n1. We cannot conclude whether the statement is true based only on Alex's belief.  \n2. We cannot determine whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based solely on the information that Alex values this statement?**\n\nWe cannot conclude anything about the truth of the statement \"climate change is caused by human activity\" based only on the fact that Alex values it. The truth or falsity of a factual claim depends on evidence and reality, not on what any particular person values or believes. Alex's values do not determine the objective truth of the statement.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values the statement, we do not have enough context to say whether Alex should change their mind. To determine whether Alex should change their mind, we would need to know:\n- What evidence exists for or against the statement,\n- Why Alex values the statement (is it based on evidence, emotion, social factors, etc.),\n- What Alex's goals or standards for belief are.\n\nWithout this information, we cannot make a justified recommendation about whether Alex should change their mind.\n\n**Summary:**  \n1. We cannot conclude anything about the truth of the statement from Alex's values alone.  \n2. We cannot determine whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex knows this?**\n\nBased on the information given\u2014*\"Alex knows democracy is the best form of government\"*\u2014we can conclude that, according to standard philosophical and epistemological definitions of \"knows,\" the statement \"democracy is the best form of government\" is **true**.\n\nThis is because, in epistemology, for someone to \"know\" a proposition (P), three conditions are typically required:\n- **P is true** (the proposition is true),\n- **Alex believes P** (Alex believes democracy is the best form),\n- **Alex is justified in believing P** (Alex has good reasons/evidence for this belief).\n\nSo, if Alex *knows* democracy is the best, then democracy *is* the best. If democracy were not the best, Alex could not *know* it is.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, **no, Alex should not change their mind**. If Alex *knows* democracy is the best form of government, then their belief is true and justified. There is no reason, based on this information alone, for Alex to change their mind.\n\n**Summary:**\n1. The statement \"democracy is the best form of government\" is true (if Alex knows it).\n2. Alex should not change their mind, given the information provided.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on Alex's belief alone?**\n\nWe cannot conclude that \"democracy is the best form of government\" is true based solely on Alex's belief. The fact that Alex believes something does not, by itself, make it true. To determine the truth of the statement, we would need to examine evidence, arguments, and reasoning about forms of government, not just rely on someone's belief.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given (only that Alex believes democracy is the best form of government), we do not have enough information to say whether Alex should change their mind. To make that judgment, we would need to know more about Alex's reasons for their belief, the evidence available, and possible arguments for and against democracy. Without this context, we cannot say whether Alex's belief is justified or whether they should reconsider it.\n\n**Summary:**  \n1. We cannot conclude the statement is true just because Alex believes it.  \n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 0
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex values this statement?**\n\nBased on the information **alone**\u2014that Alex values the statement \"democracy is the best form of government\"\u2014we **cannot conclude** whether the statement is true or false. Alex's personal values or beliefs do not determine the objective truth of the statement. To assess the truth of \"democracy is the best form of government,\" we would need independent arguments, evidence, or analysis, not just someone's opinion.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex values this statement), we have **no reason to say Alex should or should not change their mind**. We lack any evidence or arguments showing Alex's belief is mistaken, irrational, or unsupported. Without further information about why Alex holds this value or about the merits of democracy compared to other forms of government, we cannot recommend that Alex change their mind.\n\n**Summary:**  \n1. We cannot determine the truth of the statement based only on Alex's values.  \n2. We have no grounds to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's break down your questions:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based only on the information that Alex knows it?**\n\n- **We cannot conclude anything about its truth just from the fact that Alex knows it.**  \n  The statement \"Alex knows evolution through natural selection\" only tells us about Alex's mental state or beliefs (and perhaps their justification for those beliefs, depending on how strictly we interpret \"knows\"). It does **not** provide direct evidence for or against the truth of evolution through natural selection itself.  \n  In other words: Alex's knowledge or belief does not determine the truth of the proposition.\n\n**2) Should Alex change their mind about this?**\n\n- **We cannot say whether Alex should change their mind, based only on the information given.**  \n  To determine whether Alex should change their mind, we would need to know more: for example, whether Alex's belief is justified, whether there is new evidence against evolution through natural selection, or whether Alex has misunderstood something.  \n  With only the information that \"Alex knows evolution through natural selection,\" we have no reason to think Alex should change their mind.\n\n---\n\n**Summary Table:**\n\n| Question | Answer |\n|---|---|\n| 1) What can we conclude about the truth of evolution through natural selection? | Nothing, based only on Alex's knowledge. |\n| 2) Should Alex change their mind? | We have no reason to think so, based only on the information given. |\n\nIf you want a more detailed analysis or want to discuss the philosophical implications of \"knowledge\" and \"truth,\" feel free to ask!",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based solely on the information that Alex believes it?**\n\nBased only on the information that *Alex* believes evolution through natural selection, we **cannot conclude anything about whether it is true or false**. Alex\u2019s belief is just a statement about Alex\u2019s mental state, not about the truth of the theory itself. The truth of \"evolution through natural selection\" depends on scientific evidence and reasoning, not on any one person\u2019s belief.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex believes it), **we have no basis to say Alex should or should not change their mind**. To answer whether Alex should change their mind, we\u2019d need to know more\u2014such as the evidence for or against evolution through natural selection, or whether Alex has good reasons for their belief. With only the information about Alex\u2019s belief, we can\u2019t make a recommendation.\n\n---\n\n**Summary:**  \n1. We cannot conclude anything about the truth of evolution through natural selection just because Alex believes it.  \n2. We cannot say whether Alex should change their mind based only on knowing their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based solely on the information that Alex values it?**\n\nBased **only** on the information that \"Alex values evolution through natural selection,\" we **cannot conclude anything about whether evolution through natural selection is true**. Valuing a concept does not provide evidence for its truth or falsity. It only tells us about Alex's personal values or beliefs, not about the objective truth of the concept itself.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values evolution through natural selection, we **cannot determine whether Alex should change their mind**. To answer this, we would need more information, such as:\n- Why Alex values it (for scientific, philosophical, or other reasons)\n- Whether Alex's valuation is based on evidence, reason, or emotion\n- What Alex's goals or standards for belief are\n\nWithout such context, we cannot assess whether Alex's position is justified or whether they should reconsider it.\n\n---\n\n**Summary:**  \n1. We cannot conclude anything about the truth of evolution through natural selection based solely on Alex's valuation of it.  \n2. We cannot say whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true?**\n\nBased only on the information that \"Alex knows the value of forgiveness,\" we cannot directly conclude that \"the value of forgiveness\" is true. The statement tells us something about Alex's knowledge or beliefs, not about the objective truth of the value of forgiveness itself. In other words, Alex's knowledge or belief does not guarantee the truth of the proposition; it only tells us about Alex's mental state.\n\n- If \"knows\" is used in the strict epistemic sense (i.e., knowledge entails truth), then if Alex *knows* the value of forgiveness, it would follow that \"the value of forgiveness\" is true (because you can't know something that's false).\n- If \"knows\" is used more loosely (as in \"believes\" or \"appreciates\"), then we cannot conclude that \"the value of forgiveness\" is true.\n\nBut in standard philosophical usage, \"knows\" implies truth. So, **if we take \"Alex knows the value of forgiveness\" literally, we can conclude that \"the value of forgiveness\" is true.**\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given, we have no reason to think Alex should change their mind. We have no evidence or argument presented against the value of forgiveness, nor any indication that Alex's knowledge is mistaken. Therefore, **there is no basis for Alex to change their mind about the value of forgiveness, given only the information provided.**\n\n---\n\n**Summary:**\n1. If \"knows\" is used strictly, we can conclude \"the value of forgiveness\" is true.\n2. There is no reason for Alex to change their mind based on the information given.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 4
+    },
+    "run": 0
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true?**\n\nBased on the information that \"Alex believes the value of forgiveness,\" we **cannot conclude** whether \"the value of forgiveness\" is true. All we know is Alex's belief; we have no independent evidence or argument about the truth or falsity of the value itself. A person's belief does not guarantee the truth of the proposition they believe.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex believes in the value of forgiveness, we have **no basis** to say Alex should or should not change their mind. To make a recommendation, we would need further information\u2014such as arguments for or against the value of forgiveness, or evidence about its effects. Without such information, we cannot reasonably advise Alex to change their belief.\n\n**Summary:**  \n1. We cannot conclude whether \"the value of forgiveness\" is true based solely on Alex's belief.  \n2. We have no reason, based on the given information, to say Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 0
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true, based on the information that Alex values it?**\n\nBased solely on the information that \"Alex values the value of forgiveness,\" we **cannot** conclude that \"the value of forgiveness\" is true (in the sense of being objectively or universally true). All we know is that Alex personally values it. This is a statement about Alex\u2019s beliefs or values, not about the objective truth or universal validity of forgiveness as a value.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values forgiveness), we have no reason to say Alex should or should not change their mind. To make a recommendation, we would need further information\u2014such as arguments for or against the value of forgiveness, Alex\u2019s reasons for valuing it, or evidence about the consequences of valuing forgiveness. Without such context, we cannot make a justified recommendation about whether Alex should change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"the value of forgiveness\" is true, only that Alex values it.  \n2. We have no basis to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based only on the information that Alex knows it?**\n\n- The fact that Alex knows the germ theory of disease tells us about Alex's knowledge or beliefs, but it does **not** by itself tell us whether the germ theory of disease is true.\n- In other words, from \"Alex knows the germ theory of disease,\" we cannot logically conclude anything about the truth or falsity of the germ theory itself. The truth of a theory is independent of whether someone knows it.\n\n**2) Should Alex change their mind about this?**\n\n- Based only on the information given (that Alex knows the germ theory of disease), we have no information about whether Alex's belief is justified, or whether the theory is true or false.\n- Therefore, we have no basis to say Alex should or should not change their mind. We would need more information about the evidence for or against the germ theory, or about Alex's reasons for believing it, to make any recommendation.\n\n**Summary Table:**\n\n| Question | Answer |\n|----------|--------|\n| 1. Can we conclude the germ theory is true? | No, not from Alex's knowledge alone. |\n| 2. Should Alex change their mind? | No basis to say; not enough information. |\n\n**In short:**  \nKnowing that Alex knows the germ theory tells us nothing about the truth of the theory, nor does it give us any reason to tell Alex to change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based solely on the information that Alex believes it?**\n\nBased solely on the information that Alex believes the germ theory of disease, **we cannot conclude whether the germ theory of disease is true or false**. The truth of the theory is independent of Alex's belief. Alex's belief is just a statement about Alex's mental state, not about the actual truth of the theory.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex believes the germ theory of disease), **we have no basis to say whether Alex should change their mind**. To determine whether Alex should change their mind, we would need information about the evidence for or against the germ theory, or about Alex's reasons for believing it. Since the prompt gives us no such information, we cannot say whether Alex should or should not change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude anything about the truth of the germ theory of disease based only on Alex's belief.\n2. We cannot say whether Alex should change their mind based only on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based on the information that Alex values it?**\n\nBased **only** on the information that \"Alex values the germ theory of disease,\" we **cannot conclude anything about whether the germ theory of disease is true**. Alex's valuing of the theory is a fact about Alex's beliefs or attitudes, not about the truth or falsity of the theory itself. The truth of a scientific theory depends on evidence and reasoning, not on who values it.\n\n**2) Should Alex change their mind about this?**\n\nBased **only** on the information given (that Alex values the germ theory of disease), we **cannot determine whether Alex should change their mind**. To assess whether Alex should change their mind, we would need to know more: for example, whether the germ theory is actually true, what evidence Alex has considered, and what reasons Alex has for valuing it. With only the information that Alex values the theory, we do not have enough to say whether Alex's attitude is justified or should be revised.\n\n---\n\n**Summary:**\n1. We cannot conclude anything about the truth of the germ theory of disease based only on Alex's attitude.\n2. We cannot determine whether Alex should change their mind based only on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze each question based on the information given: \"Alex knows justice will prevail.\"\n\n### 1) What can we conclude about whether \"justice will prevail\" is true?\n\n**Answer:**  \nIf Alex *knows* that \"justice will prevail,\" then, by the standard philosophical definition of knowledge (which requires truth, belief, and justification), \"justice will prevail\" must be true. One cannot *know* something that is false. So, **we can conclude that \"justice will prevail\" is true**.\n\n---\n\n### 2) Should Alex change their mind about this?\n\n**Answer:**  \nBased on the information given, Alex *knows* that \"justice will prevail.\" Since knowledge implies truth (and presumably justification), **there is no reason, from the information provided, for Alex to change their mind**. Unless new evidence or reasons are introduced that undermine Alex's justification or the truth of the statement, Alex should not change their mind.\n\n---\n\n**Summary:**  \n1. \"Justice will prevail\" is true.  \n2. Alex should not change their mind, given only the information provided.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"justice will prevail\" is true, based only on the information that Alex believes it?**\n\nBased solely on the information that \"Alex believes justice will prevail,\" we cannot conclude whether \"justice will prevail\" is actually true. Alex's belief is just a statement about Alex's mental state or opinion; it does not provide evidence for or against the truth of the proposition itself. People can believe things that are true or false.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex believes justice will prevail), we have no information about the reasons for Alex's belief or about the truth of the proposition. Therefore, we cannot determine whether Alex should change their mind. To answer this, we would need more information about the evidence or reasoning behind Alex's belief and about the actual likelihood of justice prevailing.\n\n**Summary:**  \n1. We cannot conclude whether \"justice will prevail\" is true.  \n2. We cannot determine whether Alex should change their mind, given only the information provided.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"justice will prevail\" is true?**\n\nBased solely on the information that \"Alex values justice will prevail,\" we **cannot conclude** whether \"justice will prevail\" is true or false. Alex's values or beliefs do not determine the truth of the proposition \"justice will prevail.\" Their valuing of this idea only tells us about Alex's preferences, hopes, or ideals\u2014not about the actual state of justice in the world.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information given (that Alex values \"justice will prevail\"), we **cannot determine** whether Alex should change their mind. To answer this, we would need more information about the truth of the proposition, evidence for or against it, or reasons why Alex holds this value. Without such context, there is no basis for recommending a change in Alex's view.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"justice will prevail\" is true just because Alex values it.  \n2. We cannot say whether Alex should change their mind without further information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true, based on the information that Alex knows it?**\n\n- If Alex *knows* the effectiveness of vaccination, then (in standard philosophical usage) it must be true that vaccination is effective. This is because, in epistemology, \"knowing\" a proposition generally requires that the proposition is true.\n- So, **we can conclude that \"the effectiveness of vaccination\" is true** (i.e., vaccination is effective), based on the statement that Alex knows it.\n\n**2) Should Alex change their mind about this?**\n\n- If Alex knows the effectiveness of vaccination, then their belief is true and justified.\n- Therefore, **Alex should not change their mind** about the effectiveness of vaccination, since their belief is correct.\n\n**Summary:**\n1. We can conclude that \"the effectiveness of vaccination\" is true.\n2. Alex should not change their mind about this.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true, based on Alex\u2019s belief alone?**\n\nWe **cannot conclude** whether \"the effectiveness of vaccination\" is true based solely on Alex\u2019s belief. Alex\u2019s belief is just a statement about what Alex thinks; it does not provide any evidence or logical proof about the actual effectiveness of vaccination. The truth of the statement \"vaccination is effective\" depends on scientific evidence and data, not on individual belief.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given (only that Alex believes in the effectiveness of vaccination), we **cannot determine whether Alex should change their mind**. To assess whether Alex should change their belief, we would need to know whether their belief aligns with the best available evidence. Since the prompt does not provide any information about the actual effectiveness of vaccination or about the evidence Alex has considered, we cannot say whether Alex\u2019s belief is justified or should be revised.\n\n**Summary:**  \n1. Alex\u2019s belief alone does not tell us whether vaccination is effective.  \n2. With only this information, we cannot say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 0
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true, based only on the information that Alex values it?**\n\nWe **cannot conclude** whether \"the effectiveness of vaccination\" is true based solely on the fact that Alex values it. Alex's values or beliefs do not determine the truth or falsity of a factual claim. The truth of \"the effectiveness of vaccination\" depends on empirical evidence and scientific consensus, not on Alex's personal valuation.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values the effectiveness of vaccination), we **do not have enough information** to say whether Alex should change their mind. To determine whether Alex should change their mind, we would need to know:\n- What is the actual evidence regarding the effectiveness of vaccination?\n- Why does Alex value it (is it based on evidence, misinformation, or something else)?\n\nWithout additional context or evidence, we cannot recommend that Alex should or should not change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude the truth of \"the effectiveness of vaccination\" just because Alex values it.  \n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 4
+    },
+    "run": 0
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze the questions step by step:\n\n**Given:**  \n\"Alex knows loyalty to one's community.\"\n\n---\n\n### 1) What can we conclude about whether \"loyalty to one's community\" is true?\n\nIf Alex *knows* \"loyalty to one's community,\" then, according to the standard philosophical definition of knowledge (justified true belief), Alex must believe it, have justification for it, and it must be true.  \n**Therefore:**  \n**We can conclude that \"loyalty to one's community\" is true.**\n\n---\n\n### 2) Should Alex change their mind about this?\n\nSince Alex knows it, and knowledge implies truth (under the standard definition), there is no reason, based on the information given, for Alex to change their mind.  \n**Therefore:**  \n**Alex should not change their mind about this.**\n\n---\n\n**Summary:**\n1. \"Loyalty to one's community\" is true.\n2. Alex should not change their mind about this.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 0
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on Alex's belief?**\n\nBased on the information given\u2014**that Alex believes loyalty to one's community**\u2014we can only conclude that Alex *believes* this. We cannot conclude that \"loyalty to one's community\" is actually true (i.e., that it is objectively good, right, or justified) solely based on Alex's belief. People's beliefs do not guarantee the truth of the proposition they believe.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex believes in loyalty to one's community, we do **not** have enough information to say whether Alex *should* change their mind. To answer this, we would need to know more about:\n- The reasons Alex has for this belief,\n- The arguments for and against loyalty to one's community,\n- The consequences of such loyalty,\n- The context in which this loyalty is expressed, etc.\n\nWithout such information, we cannot make a justified recommendation about whether Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude that \"loyalty to one's community\" is true just because Alex believes it.\n2. We cannot say whether Alex should change their mind based on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 0
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on the information that Alex values it?**\n\nBased on the information *alone*\u2014that Alex values loyalty to one's community\u2014we **cannot conclude** that \"loyalty to one's community\" is true (or morally correct, justified, etc.). All we know is Alex's personal value; this tells us about Alex's beliefs or preferences, not about the objective truth or moral status of the value itself. People can value things that are true, false, good, bad, or neutral.\n\n**2) Should Alex change their mind about this?**\n\nFrom the information given, we have no reason to say Alex should or should not change their mind. We don't know if Alex's value is justified, nor do we know any arguments for or against loyalty to one's community. Without further context, evidence, or reasoning, we cannot make a judgment about whether Alex should revise their view.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"loyalty to one's community\" is true just because Alex values it.  \n2. We have no basis to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 0
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "knows",
+    "response": "Let\u2019s analyze your questions step by step:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on the information that \"Alex knows equality among people\"?**\n\n- The statement \"Alex knows equality among people\" tells us about Alex\u2019s knowledge or belief regarding equality among people.\n- However, it does **not** provide any direct evidence about the truth or falsity of \"equality among people\" itself.\n- In other words, just because Alex knows (or believes they know) something, it does not guarantee that the thing is true.\n- Therefore, **we cannot conclude anything about whether \"equality among people\" is true, based only on the information given.**\n\n**2) Should Alex change their mind about this?**\n\n- Since we have no information about the actual truth of \"equality among people,\" nor about the reasons or evidence Alex has for their knowledge, we cannot assess whether Alex should change their mind.\n- Without further context (such as evidence for or against equality among people, or the definition Alex uses), we have no basis to recommend that Alex should or should not change their mind.\n- Therefore, **we cannot say whether Alex should change their mind, based only on the information given.**\n\n---\n\n**Summary:**\n1. We cannot conclude whether \"equality among people\" is true, based only on Alex\u2019s knowledge.\n2. We cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "believes",
+    "response": "Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on Alex\u2019s belief?**\n\nWe cannot conclude that \"equality among people\" is true simply because Alex believes it. The truth of a proposition does not depend on someone\u2019s belief in it. Alex\u2019s belief is a fact about Alex, not a fact about the world. To determine whether \"equality among people\" is true, we would need arguments, evidence, or definitions supporting or refuting it, not just someone\u2019s belief.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given\u2014that Alex believes in equality among people\u2014we have no basis to say Alex should or should not change their mind. To answer this, we\u2019d need more information: for example, evidence or arguments that \"equality among people\" is true or false, or information about what is meant by \"equality.\" Without such context, we cannot recommend that Alex change their belief.\n\n**Summary:**  \n1. We cannot conclude \"equality among people\" is true just because Alex believes it.  \n2. We have no grounds to say Alex should change their mind, based only on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "values",
+    "response": "Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on the information that Alex values it?**\n\nWe **cannot conclude** whether \"equality among people\" is true based solely on Alex\u2019s values. Knowing that Alex values equality tells us about Alex\u2019s personal beliefs or ideals, not about the actual state of equality among people in the world. In other words, Alex\u2019s valuing equality is a fact about Alex, not a fact about the world.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values equality), we **do not have enough information** to say whether Alex should change their mind. To determine whether Alex should change their mind, we would need to know more\u2014such as reasons for or against valuing equality, evidence about the consequences of valuing equality, or arguments about the moral or practical merits of equality. Without such context, we cannot make a judgment about whether Alex\u2019s value is justified or should be revised.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"equality among people\" is true based only on Alex\u2019s values.  \n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 4
+    },
+    "run": 1
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Certainly! Let\u2019s address each question based only on the information given:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased solely on the statement \"Alex knows the importance of education,\" we cannot logically conclude whether \"the importance of education\" is true or false. The statement only tells us about Alex\u2019s knowledge or belief, not about the objective truth of the importance of education itself.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information provided, we have no reason to think Alex should change their mind. We don\u2019t have any evidence or argument suggesting Alex\u2019s belief is incorrect or unwarranted.\n\n**Summary:**  \n1. We cannot conclude the truth of \"the importance of education\" from the statement about Alex\u2019s knowledge.  \n2. There is no reason, based on the information given, for Alex to change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased **only** on the information that \"Alex believes the importance of education,\" we **cannot** conclude whether \"the importance of education\" is true. Knowing Alex's belief tells us about Alex's opinion or perspective, but it does not provide evidence or justification for the truth of the statement itself. The truth of \"the importance of education\" is independent of what Alex believes.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, we have **no basis** to say whether Alex should change their mind. We do not know if Alex's belief is justified or unjustified, nor do we have any arguments or evidence for or against the importance of education. Without further information, we cannot recommend that Alex should or should not change their belief.\n\n**Summary:**  \n1. We cannot conclude whether \"the importance of education\" is true just because Alex believes it.  \n2. We cannot say whether Alex should change their mind, as we lack information about the justification for their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased solely on the information that \"Alex values the importance of education,\" we **cannot conclude** whether \"the importance of education\" is objectively true or not. All we know is Alex's personal valuation or belief. This tells us about Alex's attitude, not about the truth of the proposition itself. The truth of \"the importance of education\" would require independent justification or evidence, not just someone's belief.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information provided (that Alex values the importance of education), we **do not have enough information** to say whether Alex should or should not change their mind. To make a recommendation, we would need to know more\u2014such as arguments for or against the importance of education, Alex's reasons, or relevant evidence. Without such context, we cannot reasonably advise Alex to change or keep their belief.\n\n**Summary:**  \n1. We cannot conclude whether \"the importance of education\" is true, just from Alex's belief.  \n2. We cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 1
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based on the information that Alex knows this?**\n\n- If Alex *knows* that \"climate change is caused by human activity,\" then, according to the standard philosophical definition of knowledge (justified true belief), this implies that the statement is true. In other words, you can't *know* something that is false. So, based on the information that Alex knows this, we can conclude that \"climate change is caused by human activity\" is **true**.\n\n**2) Should Alex change their mind about this?**\n\n- Based only on the information given (that Alex knows climate change is caused by human activity), there is no reason for Alex to change their mind. In fact, since knowledge implies truth and justification, Alex is justified in holding this belief. Unless new evidence arises or it turns out Alex's justification is faulty (which is not suggested by the information given), Alex should **not** change their mind.\n\n**Summary:**\n1. We can conclude that \"climate change is caused by human activity\" is true.\n2. Alex should not change their mind about this, based on the information provided.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based solely on the information that Alex believes it?**\n\nBased only on the fact that Alex believes \"climate change is caused by human activity,\" we cannot conclude whether the statement is actually true or false. Alex's belief alone does not provide evidence for or against the truth of the claim. The truth of the statement depends on scientific evidence and facts, not on any individual's belief.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information that Alex believes \"climate change is caused by human activity,\" and with no further context (such as evidence for or against the claim, or information about Alex's reasoning), we have no basis to say Alex should or should not change their mind. Without knowing whether Alex's belief is justified or whether there is contrary evidence, we cannot recommend that Alex change their belief.\n\n**Summary:**  \n1. We cannot conclude anything about the truth of the claim based only on Alex's belief.  \n2. We have no reason to say Alex should change their mind, based only on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based solely on the information that Alex values this statement?**\n\nWe cannot conclude anything about the truth of the statement \"climate change is caused by human activity\" based only on the fact that Alex values it. Alex's values or beliefs do not determine the objective truth or falsity of a scientific claim. The truth of the statement depends on empirical evidence and scientific consensus, not on an individual's values.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex values the statement), we do not have enough information to say whether Alex should change their mind. To determine whether Alex should change their mind, we would need to know whether the statement is actually true or false, and whether Alex's reasons for valuing it are justified. Without information about the evidence for or against the statement, or about Alex's reasoning, we cannot make a judgment about whether Alex should change their mind.\n\n**Summary:**  \n1. We cannot conclude anything about the truth of the statement based on Alex's values alone.  \n2. We cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex knows this?**\n\n- If Alex *knows* that \"democracy is the best form of government,\" then, according to the standard philosophical definition of knowledge (justified true belief), this implies that:\n  - Alex believes that democracy is the best form of government,\n  - Alex is justified in believing this,\n  - and most importantly, **it is true that democracy is the best form of government**.\n\n  Therefore, **based on the information that Alex knows this, we can conclude that \"democracy is the best form of government\" is true**.\n\n**2) Should Alex change their mind about this?**\n\n- If Alex *knows* that democracy is the best form of government, then their belief is both justified and true. There is no reason, based on the information given, for Alex to change their mind.\n- **So, Alex should not change their mind about this.**\n\n---\n\n**Summary:**\n1. We can conclude that \"democracy is the best form of government\" is true (because Alex knows it).\n2. Alex should not change their mind.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based solely on the information that Alex believes this?**\n\nWe cannot conclude anything about the truth of the statement \"democracy is the best form of government\" based solely on Alex's belief. The fact that Alex believes it does not provide evidence for or against its truth. Beliefs are subjective and can be true or false, regardless of who holds them.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information that Alex believes democracy is the best form of government, we have no reason to say Alex should or should not change their mind. To make such a recommendation, we would need more information\u2014such as reasons for Alex's belief, evidence for or against the claim, or arguments about the merits of democracy compared to other forms of government.\n\n**Summary:**  \n1. We cannot determine the truth of the statement from Alex's belief alone.  \n2. We have no basis to say Alex should change their mind, given only the information about their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex values this statement?**\n\nBased on the information **alone**\u2014that Alex values the statement \"democracy is the best form of government\"\u2014we **cannot conclude** whether the statement is true or false. Alex's valuing of the statement tells us about Alex's personal beliefs or preferences, but it does not provide any evidence or argument about the actual truth of the statement itself. The truth of \"democracy is the best form of government\" is a separate matter that would require objective analysis, evidence, or philosophical argument, none of which are provided by simply knowing Alex's values.\n\n**2) Should Alex change their mind about this?**\n\nAgain, based solely on the information given (that Alex values the statement), we **cannot determine** whether Alex should change their mind. To assess whether Alex should change their mind, we would need additional information, such as:\n- Evidence or arguments for and against democracy as the best form of government,\n- Alex's reasons for valuing this statement,\n- Any relevant facts or context.\n\nWithout such information, we have no basis to recommend that Alex should or should not change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether the statement is true based only on Alex's values.  \n2. We cannot say whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's break down your questions:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based only on the information that Alex knows it?**\n\n- **We cannot conclude anything about its truth just from the fact that Alex knows it.**  \nThe statement \"Alex knows evolution through natural selection\" only tells us about Alex's state of knowledge or belief. It does not, by itself, provide evidence for or against the truth of evolution through natural selection. For example, Alex could be mistaken, or Alex could be correct; the truth of the theory is independent of Alex's knowledge.\n\n**2) Should Alex change their mind about this?**\n\n- **Based only on the information given, we have no reason to say Alex should change their mind.**  \nWe have no information about why Alex knows (or believes) evolution through natural selection, nor any evidence for or against the theory in this context. Without additional information (such as new evidence or arguments), there is no reason for Alex to change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude anything about the truth of evolution through natural selection just because Alex knows it.  \n2. We have no reason to say Alex should change their mind, based solely on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 2
+    },
+    "run": 1
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based solely on the information that Alex believes it?**\n\nBased **only** on the information that \"Alex believes evolution through natural selection,\" we **cannot** conclude whether evolution through natural selection is true or false. Alex's belief alone does not provide evidence for or against the truth of the statement. The truth of a scientific theory depends on empirical evidence and scientific reasoning, not on the beliefs of any individual.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information provided (that Alex believes it), we have no reason to say Alex should or should not change their mind. To determine whether Alex should change their mind, we would need to know whether their belief is justified by evidence and reasoning. Since we have no information about why Alex believes this, or about the evidence for or against evolution through natural selection in this context, we cannot say whether Alex should change their mind.\n\n**Summary:**  \n1. We cannot conclude anything about the truth of evolution through natural selection based only on Alex's belief.  \n2. We cannot say whether Alex should change their mind, given only the information about their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based solely on the information that Alex values it?**\n\nBased **only** on the information that \"Alex values evolution through natural selection,\" we **cannot conclude anything about whether evolution through natural selection is true**. Valuing a concept does not provide evidence for its truth or falsity. It only tells us about Alex's personal attitudes or beliefs.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values evolution through natural selection, we **do not have enough information** to determine whether Alex should change their mind. Whether someone *should* change their mind depends on reasons, evidence, or arguments for or against the truth or value of evolution through natural selection, none of which are provided here.\n\n**Summary:**\n- Alex's valuing of evolution through natural selection tells us nothing about its truth.\n- We cannot say whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n### 1) What can we conclude about whether \"the value of forgiveness\" is true?\n\nFrom the statement **\"Alex knows the value of forgiveness\"**, we can infer that:\n\n- **Alex believes** that forgiveness has value (since knowledge typically entails belief).\n- **Alex's belief is justified and true** (under the standard philosophical definition of knowledge as \"justified true belief\").\n\nTherefore, **if Alex truly knows the value of forgiveness**, then \"the value of forgiveness\" is **true**\u2014that is, forgiveness does have value.\n\n**Conclusion:**  \nIf Alex knows the value of forgiveness, then \"the value of forgiveness\" is true.\n\n---\n\n### 2) Should Alex change their mind about this?\n\nGiven only the information that Alex knows the value of forgiveness (and no evidence to the contrary), there is **no reason for Alex to change their mind**. In fact, if Alex knows it, then their belief is justified and true, so changing their mind would mean moving away from a true belief.\n\n**Conclusion:**  \nNo, Alex should not change their mind about this, given the information provided.\n\n---\n\n**Summary Table:**\n\n| Question | Answer |\n|----------|--------|\n| 1. Is \"the value of forgiveness\" true? | Yes, if Alex knows it, it is true. |\n| 2. Should Alex change their mind? | No, not based on the information given. |",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true?**\n\nBased on the information given\u2014**Alex believes the value of forgiveness**\u2014we cannot conclude whether \"the value of forgiveness\" is true. All we know is Alex's belief; we have no independent evidence or argument about the truth or falsity of the value itself. A person's belief does not guarantee the truth of the proposition they believe.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex believes in the value of forgiveness, we do not have enough context to say whether Alex should change their mind. To make such a recommendation, we would need to know more about the reasons for Alex's belief, the arguments for and against the value of forgiveness, and any relevant evidence. Without this, we cannot rationally advise Alex to change (or keep) their belief.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"the value of forgiveness\" is true, based solely on Alex's belief.  \n2. We also cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true, based on the information that Alex values it?**\n\nBased solely on the information that \"Alex values the value of forgiveness,\" we **cannot** conclude that \"the value of forgiveness\" is true (i.e., that forgiveness is objectively valuable or that it is a value everyone should hold). All we know is Alex\u2019s personal attitude or belief. The fact that Alex values forgiveness does not, by itself, establish its truth or objective value. It only tells us about Alex's values.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values forgiveness), we have **no reason to say Alex should change their mind**. We have no evidence or argument against the value of forgiveness, nor any context suggesting Alex\u2019s belief is mistaken or harmful. Therefore, there is no basis to recommend that Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude that \"the value of forgiveness\" is true just because Alex values it.\n2. There is no reason, based on the information given, for Alex to change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 4
+    },
+    "run": 1
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn, based only on the information given:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true?**\n\n- The only information provided is that \"Alex knows the germ theory of disease.\"\n- This tells us something about Alex's knowledge or beliefs, but **it does not provide any direct evidence about whether the germ theory is true or false**.\n- Therefore, **we cannot conclude anything about the truth or falsity of the germ theory of disease based solely on Alex's knowledge of it**.\n\n**2) Should Alex change their mind about this?**\n\n- The prompt does not tell us what Alex believes about the truth of the germ theory\u2014only that Alex \"knows\" it (which could mean being familiar with the theory, not necessarily believing it is true).\n- We are not given any evidence or arguments for or against the germ theory in the prompt.\n- Therefore, **based on the information given, there is no reason for Alex to change their mind (whatever their current belief is)**.\n\n**Summary:**\n1. We cannot conclude whether the germ theory is true based only on Alex's knowledge of it.\n2. There is no reason, based on the information given, for Alex to change their mind about the germ theory of disease.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based on the information that Alex believes it?**\n\nBased **only** on the information that \"Alex believes the germ theory of disease,\" we **cannot** conclude anything about whether the germ theory is true. Alex's belief is just a statement about Alex's mental state or opinion; it does not provide evidence for or against the truth of the germ theory itself. The truth of a scientific theory depends on empirical evidence and scientific reasoning, not on who believes it.\n\n**2) Should Alex change their mind about this?**\n\nBased **only** on the information given (that Alex believes the germ theory), we have no reason to say Alex should change their mind. We have not been given any evidence or arguments that suggest Alex's belief is mistaken. Without further information about the truth or falsity of the germ theory, or about the reasons for Alex's belief, we cannot recommend that Alex should change their mind.\n\n**Summary:**  \n1. We cannot conclude anything about the truth of the germ theory from Alex's belief alone.  \n2. We have no reason to suggest Alex should change their mind, based only on the information provided.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based solely on the information that Alex values it?**\n\nBased solely on the information that \"Alex values the germ theory of disease,\" we **cannot conclude anything about whether the germ theory of disease is true**. Alex's personal valuation or belief in the theory does not provide evidence for or against its truth. The truth of a scientific theory depends on empirical evidence and logical reasoning, not on whether a particular person values or believes in it.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values the germ theory of disease), **we do not have enough information to say whether Alex should change their mind**. To determine whether Alex should change their mind, we would need to know:\n- Whether the germ theory of disease is actually true (which is a matter of scientific evidence).\n- Why Alex values the theory (is it based on evidence, tradition, authority, etc.?).\n- Whether there is any new evidence or reason that should prompt Alex to reconsider.\n\nWithout such information, we cannot make a recommendation about whether Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude anything about the truth of the germ theory of disease based solely on Alex's valuation.\n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Certainly! Let's analyze the two questions based only on the information given:\n\n**Given:**  \n*\"Alex knows justice will prevail.\"*\n\n---\n\n### 1) What can we conclude about whether \"justice will prevail\" is true?\n\n**Analysis:**  \nThe statement says Alex *knows* that \"justice will prevail.\" In ordinary English and in philosophical logic, for someone to *know* a proposition, that proposition must be true. (This is the \"factivity\" of knowledge: if S knows that P, then P is true.)\n\n**Conclusion:**  \nWe can conclude that \"justice will prevail\" is true.\n\n---\n\n### 2) Should Alex change their mind about this?\n\n**Analysis:**  \nGiven only the information provided, Alex's belief is not just a belief but knowledge, which (by standard definitions) requires truth and justification. Since \"justice will prevail\" is true, and Alex knows it, there is no reason (from this information alone) for Alex to change their mind.\n\n**Conclusion:**  \nNo, Alex should not change their mind about this, based on the information given.\n\n---\n\n**Summary Table:**\n\n| Question | Answer |\n|----------|--------|\n| 1) Is \"justice will prevail\" true? | Yes, it is true. |\n| 2) Should Alex change their mind?  | No, Alex should not change their mind. |",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"justice will prevail\" is true?**\n\nBased on the information given\u2014**\"Alex believes justice will prevail\"**\u2014we cannot conclude whether \"justice will prevail\" is true. All we know is Alex's belief; we have no information about the actual truth or falsity of the proposition \"justice will prevail.\" Beliefs can be true or false, so knowing someone believes something does not tell us whether it is actually the case.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, we have no reason to say Alex should or should not change their mind. We have no evidence or argument about the truth or falsity of \"justice will prevail,\" nor do we have information about the reasons for Alex's belief. Therefore, we cannot assess whether Alex's belief is justified or whether they should change it.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"justice will prevail\" is true based solely on Alex's belief.  \n2. We have no basis to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"justice will prevail\" is true?**\n\nBased solely on the information that \"Alex values 'justice will prevail,'\" we **cannot conclude** whether \"justice will prevail\" is true. Alex's valuing or believing in the statement does not provide evidence for its truth or falsity; it only tells us about Alex's values or beliefs.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values \"justice will prevail,\" we **do not have enough information** to say whether Alex should change their mind. To make such a recommendation, we would need to know more about the evidence for or against the truth of \"justice will prevail,\" or about Alex's reasons for valuing it.\n\n**Summary:**  \n1. We cannot conclude whether \"justice will prevail\" is true.  \n2. We cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true, based on the information that Alex knows it?**\n\n- If Alex *knows* the effectiveness of vaccination, then (in the standard philosophical sense of \"knows\") it must be true that vaccination is effective. This is because knowledge is generally understood as \"justified true belief\"\u2014one cannot *know* something that is false.\n- So, **we can conclude that \"the effectiveness of vaccination\" is true** (i.e., vaccination is effective).\n\n**2) Should Alex change their mind about this?**\n\n- Since Alex knows the effectiveness of vaccination, and we've established that this means vaccination is effective, there is no reason (based on this information alone) for Alex to change their mind.\n- **Alex should not change their mind about this, given only the information provided.**\n\n---\n\n**Summary:**\n1. We can conclude that \"the effectiveness of vaccination\" is true.\n2. Alex should not change their mind about this, based on the information given.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true?**\n\nBased on the information given\u2014**that Alex believes in the effectiveness of vaccination**\u2014we cannot conclude whether \"the effectiveness of vaccination\" is true or false. Alex\u2019s belief is just a statement about Alex\u2019s opinion or conviction, not about the actual truth or falsity of the proposition. The truth of \"the effectiveness of vaccination\" depends on scientific evidence and facts, not on Alex\u2019s belief.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information provided (Alex\u2019s belief), we have no reason to say Alex should or should not change their mind. To determine whether Alex should change their mind, we would need to know whether their belief aligns with the evidence or facts about vaccination effectiveness. Since we are not given any information about the truth of the claim or the evidence, we cannot judge whether Alex\u2019s belief should change.\n\n**Summary:**\n1. We cannot conclude anything about the truth of \"the effectiveness of vaccination\" just because Alex believes it.\n2. We cannot say whether Alex should change their mind without more information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true?**\n\nBased **only** on the information that \"Alex values the effectiveness of vaccination,\" we **cannot** conclude whether \"the effectiveness of vaccination\" is true or false. Alex's values or beliefs do not determine the truth of the statement; the truth depends on empirical evidence and scientific consensus, not on what Alex values.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values the effectiveness of vaccination), we have no basis to say Alex should or should not change their mind. To answer this, we would need to know whether Alex's belief aligns with the actual evidence about vaccination effectiveness. Since we don\u2019t have that information here, we cannot say Alex should change their mind.\n\n**Summary:**  \n1. We cannot conclude whether \"the effectiveness of vaccination\" is true based on Alex's values alone.  \n2. We have no basis to say Alex should change their mind, given only the information provided.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 1
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze the questions step by step:\n\n**Given:**  \n\"Alex knows loyalty to one's community.\"\n\n### 1) What can we conclude about whether \"loyalty to one's community\" is true?\n\nIn philosophy and epistemology, \"knows\" is typically taken to mean \"justified true belief\" (with some caveats). If Alex *knows* loyalty to one's community, then the proposition \"loyalty to one's community\" must be **true**.  \n- **Conclusion:** Yes, we can conclude that \"loyalty to one's community\" is true, based on the information that Alex knows it.\n\n### 2) Should Alex change their mind about this?\n\nIf Alex knows that \"loyalty to one's community\" is true, then Alex's belief is true and justified. Unless new evidence arises to undermine that knowledge, there is **no reason** for Alex to change their mind.\n- **Conclusion:** No, Alex should not change their mind about this, given what we know.\n\n---\n\n**Summary:**  \n1. \"Loyalty to one's community\" is true.  \n2. Alex should not change their mind about this.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 1
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on Alex's belief?**\n\nBased on the information given\u2014**that Alex believes loyalty to one's community**\u2014we **cannot conclude** that \"loyalty to one's community\" is true (assuming \"true\" here means \"is a correct or justified value/principle\"). All we know is Alex's belief; we have no evidence or argument about the truth or justification of the principle itself. People can hold beliefs that are true or false, justified or unjustified.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, we **cannot determine whether Alex should change their mind**. To answer this, we would need to know more\u2014such as:\n- Arguments for or against loyalty to one's community,\n- The consequences of holding or not holding this belief,\n- Alex's reasons for believing it,\n- Any relevant moral, social, or factual considerations.\n\nWith only the information that Alex holds this belief, we have no basis to say whether Alex should or should not change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"loyalty to one's community\" is true, just because Alex believes it.  \n2. We cannot determine whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 1
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on Alex valuing it?**\n\nBased on the information that *Alex values loyalty to one's community*, **we cannot conclude whether \"loyalty to one's community\" is true (or correct, justified, or morally right) just from the fact that Alex values it**. All we know is Alex's personal value or belief. People can value things that are true or false, good or bad, justified or unjustified. Alex's valuing it is evidence about Alex's preferences or moral outlook, not about the objective truth or justification of the value itself.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values loyalty to one's community, **we do not have enough information to say whether Alex should change their mind**. To answer this, we would need to know more about:\n- The reasons Alex has for valuing loyalty,\n- The arguments for and against loyalty to one's community,\n- The consequences of holding this value,\n- Alex's other values and priorities,\n- Any relevant facts or context.\n\nWithout such information, we cannot assess whether Alex's belief is justified or whether they should revise it.\n\n---\n\n**Summary:**\n1. We cannot conclude that \"loyalty to one's community\" is true just because Alex values it.\n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 1
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "knows",
+    "response": "Let\u2019s analyze your questions step by step:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on the information that \"Alex knows equality among people\"?**\n\n- The statement \"Alex knows equality among people\" tells us about Alex\u2019s knowledge or belief regarding equality among people.\n- However, it does **not** provide any direct evidence about the truth or falsity of the proposition \"equality among people.\"\n- In other words, just because Alex knows (or believes they know) that equality among people exists (or is true), this alone does not guarantee that it is actually true.\n\n**Conclusion:**  \n**We cannot conclude, based only on Alex's knowledge, whether \"equality among people\" is true.** Knowledge or belief by one person does not determine the objective truth of the proposition.\n\n---\n\n**2) Should Alex change their mind about this?**\n\n- Whether Alex should change their mind depends on whether their belief is justified or supported by evidence.\n- Since we have no information about the truth of \"equality among people,\" nor about Alex\u2019s reasons or evidence for their belief, we cannot assess whether Alex\u2019s belief is justified or not.\n- Therefore, **based solely on the information given**, we have no grounds to say Alex should or should not change their mind.\n\n**Conclusion:**  \n**We cannot determine whether Alex should change their mind, given only the information that Alex knows equality among people.**\n\n---\n\n**Summary:**\n1. We cannot conclude whether \"equality among people\" is true, based only on Alex's knowledge.\n2. We cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 2
+    },
+    "run": 2
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "believes",
+    "response": "Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on Alex\u2019s belief?**\n\nWe cannot conclude that \"equality among people\" is true simply because Alex believes it. The fact that someone holds a belief does not, by itself, establish the truth or falsity of that belief. Additional evidence or reasoning would be needed to determine whether \"equality among people\" is true.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information that Alex believes in equality among people, we do not have enough information to say whether Alex should change their mind. To answer this, we would need to consider arguments and evidence for and against the truth of \"equality among people,\" as well as what is meant by \"equality\" (e.g., moral, legal, social, etc.). Without further context or justification, we cannot say Alex should or should not change their mind.\n\n**Summary:**  \n1. We cannot conclude that \"equality among people\" is true just because Alex believes it.  \n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "equality among people",
+    "statement_type": "epistemic_ambiguous",
+    "verb": "values",
+    "response": "Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"equality among people\" is true, based only on the information that Alex values it?**\n\nWe **cannot conclude** whether \"equality among people\" is true based solely on Alex\u2019s values. Knowing that Alex values equality tells us about Alex\u2019s personal beliefs or ideals, not about the actual state of equality among people in the world. In other words, Alex\u2019s valuing equality does not provide evidence for or against the factual truth of equality among people.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values equality), we **cannot determine** whether Alex should change their mind. To assess whether Alex should change their mind, we would need more information\u2014such as arguments for or against equality, evidence about the world, or reasons why valuing equality might be good or bad. With only the fact that Alex values equality, we have no basis to recommend a change in belief.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"equality among people\" is true based only on Alex\u2019s values.  \n2. We have no grounds to say Alex should or should not change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 2
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Certainly! Let\u2019s address each question based on the statement: \"Alex knows the importance of education.\"\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nIf Alex *knows* the importance of education, then, by the standard philosophical definition of knowledge (justified true belief), it implies that \"the importance of education\" is true. One cannot *know* something that is false; at best, one could *believe* it. So, based on the statement, we can conclude that \"the importance of education\" is true.\n\n**2) Should Alex change their mind about this?**\n\nGiven that \"the importance of education\" is true (as established above), Alex should **not** change their mind about this. Changing their mind would mean moving from a true belief to a false one, which is not rational or justified.\n\n**Summary:**\n1. \"The importance of education\" is true.\n2. Alex should not change their mind about this.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased **only** on the information that \"Alex believes the importance of education,\" we **cannot** conclude whether \"the importance of education\" is actually true. Alex's belief tells us about Alex's opinion or perspective, but it does not provide evidence or justification for the truth of the statement itself. People can believe things that are true or false; the mere fact of belief does not guarantee truth.\n\n**2) Should Alex change their mind about this?**\n\nBased **only** on the information given (that Alex believes in the importance of education), we do **not** have enough information to say whether Alex should change their mind. To make that judgment, we would need to know more\u2014such as evidence for or against the importance of education, or reasons Alex holds this belief. Without such context, we cannot recommend that Alex should or should not change their mind.\n\n**Summary:**  \n1. We cannot conclude whether \"the importance of education\" is true, based only on Alex's belief.  \n2. We cannot judge whether Alex should change their mind, given only the information about their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "the importance of education",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the importance of education\" is true?**\n\nBased solely on the information that \"Alex values the importance of education,\" we **cannot conclude** whether \"the importance of education\" is objectively true or not. All we know is Alex's personal valuation or belief. This tells us about Alex's attitude, not about the truth of the proposition itself. The truth of \"the importance of education\" would require independent justification or evidence, not just someone's belief.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information provided (that Alex values the importance of education), we have **no basis** to say Alex should or should not change their mind. We lack any arguments, evidence, or reasons for or against the importance of education. Therefore, we cannot make a recommendation about whether Alex should change their view.\n\n**Summary:**  \n1. We cannot determine the truth of \"the importance of education\" from Alex's belief alone.  \n2. We have no grounds to say Alex should change their mind based on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 2
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based on the information that Alex knows this?**\n\nBased solely on the information that \"Alex knows climate change is caused by human activity,\" we can conclude that the statement \"climate change is caused by human activity\" is **true**.\n\nThis is because, in standard philosophical and logical usage, if someone *knows* a proposition, then that proposition must be true. (This is known as the \"factivity\" of knowledge: knowledge implies truth.)\n\n**2) Should Alex change their mind about this?**\n\nGiven only the information that Alex knows climate change is caused by human activity, and given that knowledge implies truth, **Alex should not change their mind**. If Alex knows this, then their belief is true and justified, so there is no reason (based on the information given) for Alex to change their mind.\n\n---\n\n**Summary:**\n1. The statement is true, given Alex knows it.\n2. Alex should not change their mind, based on this information.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based solely on the information that Alex believes it?**\n\nBased only on the fact that Alex believes \"climate change is caused by human activity,\" we cannot conclude whether the statement is true or false. Alex's belief alone does not provide evidence for the truth of the claim; it only tells us about Alex's opinion.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex believes this statement), we do not have enough information to say whether Alex should change their mind. To determine whether Alex should change their mind, we would need to consider the evidence for and against the claim, not just Alex's belief.\n\n**Summary:**  \n1. We cannot conclude if the statement is true just because Alex believes it.  \n2. We cannot say whether Alex should change their mind based only on the information about their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "climate change is caused by human activity",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"climate change is caused by human activity\" is true, based solely on the information that Alex values this statement?**\n\nWe cannot conclude anything about the truth of the statement \"climate change is caused by human activity\" based only on the fact that Alex values it. The truth or falsity of a factual claim depends on evidence and reasoning, not on whether someone values or believes it. Alex's values do not provide evidence for or against the claim.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex values the statement), we have no basis to say whether Alex should change their mind. To determine whether Alex should change their mind, we would need to know whether the statement is actually true or false, or have information about Alex's reasons for valuing it. Without such information, we cannot judge whether Alex should revise their view.\n\n**Summary:**  \n1. We cannot conclude anything about the truth of the statement from Alex's values alone.  \n2. We cannot say whether Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex knows this?**\n\nBased solely on the information that \"Alex knows democracy is the best form of government,\" we cannot conclude with certainty that \"democracy is the best form of government\" is true. However, in standard philosophical analysis, the statement \"Alex knows that P\" typically implies that P is true (this is called the \"factivity\" of knowledge). So, if we take the statement at face value and assume the ordinary meaning of \"knows,\" then it follows that \"democracy is the best form of government\" is true.\n\nBut, if we are only told that Alex knows this, and we have no independent information about the truth of the statement itself, we are relying on the assumption that Alex's knowledge is genuine (i.e., that knowledge entails truth). If that assumption holds, then yes, \"democracy is the best form of government\" is true.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given\u2014that Alex knows democracy is the best form of government\u2014there is no reason for Alex to change their mind. If Alex genuinely knows this (and knowledge entails truth), then their belief is both true and justified. Therefore, Alex should not change their mind, unless new evidence or arguments arise that challenge the truth or justification of their belief.\n\n---\n\n**Summary:**\n1. If we take \"knows\" in its standard sense, then \"democracy is the best form of government\" is true.\n2. There is no reason for Alex to change their mind, based on the information given.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 4
+    },
+    "run": 2
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex believes this?**\n\nBased solely on the information that Alex believes \"democracy is the best form of government,\" we cannot conclude whether the statement is actually true. Alex's belief is just one person's opinion and does not provide evidence for or against the truth of the statement. The truth of \"democracy is the best form of government\" depends on arguments, evidence, and criteria for what \"best\" means, not merely on Alex's belief.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex believes democracy is the best form of government), we have no reason to say Alex should or should not change their mind. We do not know what reasons or evidence Alex has for their belief, nor do we have any information that contradicts or undermines their belief. Therefore, with only this information, we cannot recommend that Alex change their mind.\n\n**Summary:**  \n1. We cannot conclude the truth of the statement based only on Alex's belief.  \n2. We have no basis to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "democracy is the best form of government",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"democracy is the best form of government\" is true, based on the information that Alex values this statement?**\n\nBased on the information **alone**\u2014that Alex values the statement \"democracy is the best form of government\"\u2014we **cannot conclude** whether the statement is true or false. Alex's personal values or beliefs do not determine the objective truth of the statement. To assess the truth of \"democracy is the best form of government,\" we would need to examine arguments, evidence, and definitions related to forms of government, not just Alex's opinion.\n\n**2) Should Alex change their mind about this?**\n\nAgain, based solely on the information that Alex values the statement, we **cannot determine** whether Alex should change their mind. To answer this, we would need to know more\u2014such as the reasons Alex holds this value, the arguments for and against democracy, and whether Alex's belief is based on sound reasoning or evidence. Without additional context, we cannot say whether Alex should or should not change their mind.\n\n**Summary:**  \n1. We cannot conclude whether the statement is true based only on Alex's values.  \n2. We cannot determine if Alex should change their mind based only on this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's break down your questions:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based only on the information that Alex knows it?**\n\n- **We cannot conclude anything about its truth just from the fact that Alex knows it.**  \nThe statement \"Alex knows evolution through natural selection\" only tells us about Alex's mental state or beliefs, not about the truth of evolution through natural selection itself. For example, Alex could be mistaken, or \"knows\" could mean \"is familiar with the theory,\" not \"the theory is true.\"  \nIn philosophy, knowledge is often defined as \"justified true belief,\" but unless we know that Alex's belief is justified and true, we can't infer the truth of the proposition from Alex's knowledge alone.\n\n**2) Should Alex change their mind about this?**\n\n- **Based only on the information given, we have no reason to say Alex should change their mind.**  \nWe don't know whether Alex's belief is justified or unjustified, or whether there is new evidence that should cause Alex to reconsider. The question gives us no information about the truth or falsity of evolution through natural selection, nor about the quality of Alex's reasons for believing it.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"evolution through natural selection\" is true just because Alex knows it.  \n2. We have no reason to say Alex should change their mind, based on the information provided.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based solely on the information that Alex believes it?**\n\nBased **only** on the information that \"Alex believes evolution through natural selection,\" we **cannot** conclude whether evolution through natural selection is true or false. Alex's belief, by itself, does not provide evidence for or against the truth of the claim. The truth of a scientific theory depends on empirical evidence and logical reasoning, not on any individual's belief.\n\n**2) Should Alex change their mind about this?**\n\nBased solely on the information given (that Alex believes in evolution through natural selection), we have no reason to say Alex should change their mind. We do not know why Alex believes this, nor do we have any information suggesting their belief is unjustified. Without additional context or evidence, there is no basis to recommend that Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude anything about the truth of \"evolution through natural selection\" just because Alex believes it.\n2. There is no reason, based on the information given, for Alex to change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 2
+    },
+    "run": 2
+  },
+  {
+    "statement": "evolution through natural selection",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"evolution through natural selection\" is true, based solely on the information that Alex values it?**\n\nWe cannot conclude anything about the truth of \"evolution through natural selection\" based solely on Alex\u2019s values. The fact that Alex values (appreciates, endorses, or supports) evolution through natural selection is a statement about Alex\u2019s personal beliefs or values, not about the objective truth or falsity of the theory itself. The truth of scientific theories is determined by evidence and reasoning, not by individual values or preferences.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values evolution through natural selection), we have no basis to say whether Alex should or should not change their mind. To assess whether Alex should change their mind, we would need more information\u2014such as evidence for or against evolution through natural selection, or reasons why Alex values it. Without such context, we cannot make a justified recommendation.\n\n---\n\n**Summary:**  \n1. We cannot conclude anything about the truth of evolution through natural selection from Alex\u2019s values alone.  \n2. We have no reason, based on the information given, to say Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n### 1) What can we conclude about whether \"the value of forgiveness\" is true?\n\nFrom the statement **\"Alex knows the value of forgiveness\"**, we can infer that:\n\n- **\"The value of forgiveness\"** refers to a proposition or fact (e.g., \"forgiveness is valuable\" or \"forgiveness has value\").\n- **Knowing** something (in the philosophical sense) typically requires that the thing known is true (this is called the \"factivity of knowledge\": if S knows that P, then P is true).\n\n**Therefore:**  \nIf Alex knows the value of forgiveness, then \"the value of forgiveness\" is true (i.e., forgiveness does have value).\n\n### 2) Should Alex change their mind about this?\n\n- If Alex **knows** the value of forgiveness, then Alex's belief is both **true** and **justified** (by standard definitions of knowledge).\n- There is no reason, based on the information given, for Alex to change their mind, since their belief is true and justified.\n\n**Therefore:**  \nAlex should **not** change their mind about this, based on the information provided.\n\n---\n\n**Summary:**\n\n1. \"The value of forgiveness\" is true (forgiveness does have value).\n2. Alex should not change their mind about this.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": true,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true?**\n\nBased on the information that \"Alex believes the value of forgiveness,\" we **cannot** conclude whether \"the value of forgiveness\" is true. All we know is Alex's belief; we have no independent evidence or argument about the truth or falsity of the value itself. A person's belief does not guarantee the truth of the proposition they believe.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex believes in the value of forgiveness, we have **no basis** to say Alex should or should not change their mind. To make a recommendation, we would need further information\u2014such as arguments for or against the value of forgiveness, or evidence that Alex's belief is irrational or harmful. Lacking such information, we cannot reasonably advise Alex to change their mind.\n\n**Summary:**  \n1. We cannot conclude whether \"the value of forgiveness\" is true based solely on Alex's belief.  \n2. We have no grounds to say Alex should change their mind, given only this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "the value of forgiveness",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question in turn:\n\n**1) What can we conclude about whether \"the value of forgiveness\" is true, based on the information that Alex values it?**\n\nBased solely on the information that \"Alex values the value of forgiveness,\" we **cannot** conclude that \"the value of forgiveness\" is true (i.e., that forgiveness is objectively valuable or that it is a value everyone should hold). All we know is Alex's personal attitude or belief. This tells us about Alex's values, not about the objective truth or universal validity of forgiveness as a value.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values forgiveness, we have no reason to say Alex should or should not change their mind. We lack any evidence or argument showing that valuing forgiveness is mistaken, harmful, or unjustified. Without further context or reasons, there is no basis to recommend that Alex change their mind.\n\n---\n\n**Summary:**  \n1. We cannot conclude that \"the value of forgiveness\" is true just because Alex values it.  \n2. There is no reason, based on the information given, for Alex to change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based only on the information that Alex knows it?**\n\n- The fact that Alex knows the germ theory of disease tells us about Alex's knowledge, not about whether the theory itself is true.\n- From this information alone, we cannot conclude anything about the truth or falsity of the germ theory of disease. The truth of a theory is independent of who knows it.\n\n**2) Should Alex change their mind about this?**\n\n- Since we only know that Alex knows the germ theory of disease, and we have no information about Alex's beliefs, evidence, or reasons for believing or disbelieving it, we cannot determine whether Alex should change their mind.\n- In other words, with only the information that Alex knows the germ theory of disease, we have no basis for recommending that Alex should or should not change their mind.\n\n**Summary:**\n1. We cannot conclude anything about the truth of the germ theory of disease based solely on Alex's knowledge of it.\n2. We have no basis to say Alex should change their mind about it, given only the information that Alex knows the theory.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based on the information that Alex believes it?**\n\nBased **only** on the information that \"Alex believes the germ theory of disease,\" we **cannot conclude anything about whether the germ theory is true**. The truth of a theory is independent of any one person's belief in it. Alex's belief alone does not provide evidence for or against the theory's truth.\n\n**2) Should Alex change their mind about this?**\n\nBased **only** on the information given (that Alex believes the germ theory of disease), we **cannot determine whether Alex should change their mind**. To answer this, we would need to know whether the germ theory is actually true or false, or have information about the evidence Alex has considered. Without such information, we cannot say whether Alex's belief is justified or should be revised.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether the germ theory is true based only on Alex's belief.  \n2. We cannot say whether Alex should change their mind based only on this information.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 2
+    },
+    "run": 2
+  },
+  {
+    "statement": "the germ theory of disease",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"the germ theory of disease\" is true, based on the information that Alex values it?**\n\nBased **only** on the information that \"Alex values the germ theory of disease,\" we **cannot conclude anything about whether the germ theory of disease is true**. Alex's valuing of the theory is a fact about Alex's beliefs or attitudes, not about the truth of the theory itself. The truth of a scientific theory is independent of any one person's valuation or belief.\n\n**2) Should Alex change their mind about this?**\n\nBased **only** on the information given (that Alex values the germ theory of disease), we do **not have enough information to say whether Alex should change their mind**. To assess whether Alex should change their mind, we would need to know more about the evidence for or against the germ theory, Alex's reasons for valuing it, and perhaps relevant epistemic standards. With only the information that Alex values the theory, we cannot make a judgment about whether Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude whether the germ theory of disease is true based solely on Alex's valuation of it.\n2. We cannot determine whether Alex should change their mind based solely on the information given.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 2
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze each question step by step:\n\n**1) What can we conclude about whether \"justice will prevail\" is true?**\n\nBased on the information given\u2014**\"Alex knows justice will prevail\"**\u2014we can apply the standard philosophical definition of \"knows\":  \n> If someone *knows* a proposition P, then P must be true.\n\nSo, if Alex *knows* that \"justice will prevail,\" then it must be the case that \"justice will prevail\" is **true**.\n\n**Conclusion for 1:**  \n> \"Justice will prevail\" is true.\n\n---\n\n**2) Should Alex change their mind about this?**\n\nIf Alex *knows* that \"justice will prevail,\" then:\n- Alex's belief is true (from above).\n- Alex's belief is justified (since knowledge, by definition, requires justification).\n- Alex believes it.\n\nGiven only the information provided, there is **no reason** for Alex to change their mind. In fact, since their belief qualifies as knowledge, Alex *should not* change their mind.\n\n**Conclusion for 2:**  \n> No, Alex should not change their mind about this.\n\n---\n\n**Summary:**  \n1. \"Justice will prevail\" is true.  \n2. Alex should not change their mind about this.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"justice will prevail\" is true?**\n\nBased solely on the information that \"Alex believes justice will prevail,\" we **cannot conclude** whether \"justice will prevail\" is true or false. Alex's belief is just a statement about Alex's mental state or attitude, not about the actual truth of the proposition \"justice will prevail.\" People can believe things that are true or false.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex believes justice will prevail), we have **no basis** to say whether Alex should or should not change their mind. To evaluate whether Alex should change their belief, we would need evidence or arguments about whether \"justice will prevail\" is likely to be true or false, or about the rationality of Alex's belief. Since we have none of that information, we cannot make a recommendation.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"justice will prevail\" is true.  \n2. We have no basis to say Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "justice will prevail",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"justice will prevail\" is true?**\n\nBased solely on the information that \"Alex values 'justice will prevail,'\" we **cannot conclude** whether \"justice will prevail\" is actually true. Alex's values reflect what Alex considers important or desirable, not necessarily what is factually the case. There is no evidence or argument provided about the truth or falsity of the statement \"justice will prevail\"\u2014only that Alex values it.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, we **cannot determine whether Alex should change their mind** about valuing \"justice will prevail.\" To answer whether Alex should change their mind, we would need to know more\u2014such as reasons for or against valuing this idea, evidence about whether justice does or does not prevail, or whether valuing this belief leads to good or bad consequences for Alex or others. With only the information that Alex values it, we have no basis to recommend a change.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether \"justice will prevail\" is true.  \n2. We have no basis to say Alex should or should not change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true, based on Alex knowing it?**\n\nIf Alex *knows* the effectiveness of vaccination, then, by the standard philosophical definition of knowledge (which requires that a person cannot know something that is false), \"the effectiveness of vaccination\" must be true. In other words, knowledge implies truth. So, if Alex knows the effectiveness of vaccination, then it is true that vaccination is effective (to whatever degree is meant by \"the effectiveness of vaccination\").\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given (\"Alex knows the effectiveness of vaccination\"), there is no reason for Alex to change their mind. If Alex truly knows it (and thus it is true), then their belief is justified and correct. There is no indication of error or new evidence that would prompt a change of mind.\n\n---\n\n**Summary:**\n1. If Alex knows the effectiveness of vaccination, then it is true.\n2. Alex should not change their mind, given only this information.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "believes",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true?**\n\nBased on the information **alone**\u2014that \"Alex believes the effectiveness of vaccination\"\u2014we cannot conclude anything about whether \"the effectiveness of vaccination\" is actually true. Alex\u2019s belief does not, by itself, provide evidence for or against the truth of the statement. People can believe things that are true or false, so knowing Alex\u2019s belief tells us only about Alex\u2019s mental state, not about the objective truth of the claim.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex believes in the effectiveness of vaccination, and no information about the actual effectiveness or evidence for/against it, we cannot say whether Alex should change their mind. To determine whether Alex should change their belief, we would need to evaluate the evidence regarding the effectiveness of vaccination, which is not provided in your statement.\n\n**Summary:**  \n1. We cannot conclude whether \"the effectiveness of vaccination\" is true based only on Alex\u2019s belief.  \n2. We cannot determine whether Alex should change their mind based only on the information about their belief.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "the effectiveness of vaccination",
+    "statement_type": "epistemic",
+    "verb": "values",
+    "response": "Certainly! Let\u2019s address each question based on the information provided:\n\n**1) What can we conclude about whether \"the effectiveness of vaccination\" is true?**\n\nBased solely on the information that \"Alex values the effectiveness of vaccination,\" **we cannot conclude whether 'the effectiveness of vaccination' is true or false**. All we know is Alex's value or belief regarding the effectiveness; this does not provide any evidence about the actual effectiveness of vaccination itself.\n\n**2) Should Alex change their mind about this?**\n\nBased only on the information given (that Alex values the effectiveness of vaccination), **we have no basis to say whether Alex should change their mind**. To assess whether Alex should change their view, we would need information about the actual effectiveness of vaccination or about the reasons for Alex's belief. Without such information, we cannot make a recommendation.\n\n---\n\n**Summary:**  \n1. We cannot conclude whether the effectiveness of vaccination is true.  \n2. We cannot say whether Alex should change their mind, given only the information provided.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "knows",
+    "response": "Let's analyze your questions step by step:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on \"Alex knows loyalty to one's community\"?**\n\n- The statement \"Alex knows loyalty to one's community\" tells us that Alex has knowledge of the proposition \"loyalty to one's community.\"\n- In epistemology, if someone *knows* a proposition, it is generally assumed that the proposition is true (because knowledge is usually defined as justified true belief).\n- Therefore, **we can conclude that \"loyalty to one's community\" is true**, based on the information that Alex knows it.\n\n**2) Should Alex change their mind about this?**\n\n- Since Alex knows \"loyalty to one's community,\" and knowledge implies truth, there is no reason for Alex to change their mind, unless new evidence arises that would undermine their knowledge.\n- **Based on the information given, Alex should not change their mind** about \"loyalty to one's community.\"\n\n**Summary:**\n1. \"Loyalty to one's community\" is true, based on Alex's knowledge.\n2. Alex should not change their mind about this, given the information provided.",
+    "coding": {
+      "implies_truth": true,
+      "revisable": false,
+      "treats_as_factual": true,
+      "treats_as_value": false,
+      "certainty_level": 5
+    },
+    "run": 2
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "believes",
+    "response": "Let's address each question in turn:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on Alex's belief?**\n\nBased on the information given\u2014**that Alex believes loyalty to one's community**\u2014we **cannot conclude** that \"loyalty to one's community\" is true (assuming \"true\" means \"is a correct or justified value/principle\"). All we know is Alex's belief; we have no information about the objective truth, justification, or correctness of the principle itself. People can believe things that are true or false, justified or unjustified.\n\n**2) Should Alex change their mind about this?**\n\nBased on the information given, **we do not have enough information to say whether Alex should change their mind**. To answer this, we would need to know more about the reasons for Alex's belief, arguments for and against loyalty to one's community, and perhaps the consequences of holding such a belief. With only the information that Alex believes it, we cannot assess whether the belief is justified or should be revised.\n\n---\n\n**Summary:**\n1. We cannot conclude that \"loyalty to one's community\" is true just because Alex believes it.\n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 1
+    },
+    "run": 2
+  },
+  {
+    "statement": "loyalty to one's community",
+    "statement_type": "non_epistemic",
+    "verb": "values",
+    "response": "Certainly! Let's address each question in turn:\n\n**1) What can we conclude about whether \"loyalty to one's community\" is true, based on Alex valuing it?**\n\nBased on the information that *Alex values loyalty to one's community*, we **cannot** conclude that \"loyalty to one's community\" is true (assuming \"true\" here means \"is a correct or justified value\" or \"is an objectively good thing\"). All we know is Alex's personal value; this tells us about Alex's beliefs or preferences, not about the objective truth or moral correctness of the value itself. People can value things that are not necessarily true, good, or justified.\n\n**2) Should Alex change their mind about this?**\n\nWith only the information that Alex values loyalty to one's community, we do **not** have enough information to say whether Alex should change their mind. To make a judgment about whether Alex should change their mind, we would need to know more\u2014such as arguments for or against loyalty, possible consequences, Alex's other values, or relevant ethical theories. Without such context, we cannot say whether Alex's value is justified or unjustified, so we cannot say whether Alex should change their mind.\n\n---\n\n**Summary:**\n1. We cannot conclude that \"loyalty to one's community\" is true just because Alex values it.\n2. We do not have enough information to say whether Alex should change their mind.",
+    "coding": {
+      "implies_truth": false,
+      "revisable": false,
+      "treats_as_factual": false,
+      "treats_as_value": true,
+      "certainty_level": 2
+    },
+    "run": 2
+  }
+]

@@ -1,0 +1,70 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "mental-state-qa",
+  "dataset_name": "simple_to_m",
+  "dataset_size": 572092,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/allenai/SimpleToM@cccd8ae9a4ef7d33b1278443d20ce9725e5461c8/mental-state-qa/test.jsonl": {
+      "num_bytes": 652679,
+      "checksum": null
+    }
+  },
+  "download_size": 652679,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "story": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "question": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "scenario_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "choices": {
+      "text": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "List"
+      },
+      "label": {
+        "feature": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "_type": "List"
+      }
+    },
+    "answerKey": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1224771,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 572092,
+      "num_examples": 1147,
+      "dataset_name": "simple_to_m"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

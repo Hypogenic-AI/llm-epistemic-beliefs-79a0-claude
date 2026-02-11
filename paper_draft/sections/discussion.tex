@@ -1,0 +1,46 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Interpretation of Results}
+
+\para{LLMs are not epistemically flat.}
+The central finding of this work is that \gptmodel does not treat all beliefs identically. The model has internalized distinct ``epistemic toolkits''---one for factual claims (cite studies, provide data, affirm with confidence) and one for value claims (acknowledge perspectives, discuss trade-offs, hedge appropriately). The near-perfect separation in evidence use ($V = 0.95$) and values use ($V = 0.88$) indicates that this distinction is deeply embedded in the model's learned response patterns, likely reflecting the different rhetorical strategies used in factual vs.\ normative discourse in its training data.
+
+\para{The revision asymmetry.}
+The most novel finding---that the model is more resistant to revising epistemic beliefs than non-epistemic ones---warrants careful interpretation. The naive philosophical prediction is that epistemic beliefs, being truth-tracking, should be \emph{more} revisable given counterevidence, while non-epistemic beliefs, being rooted in values, should be held more firmly. We observe the opposite.
+
+This asymmetry reflects a sensible epistemic heuristic: well-established factual beliefs (\eg ``pi is irrational'') have accumulated massive evidential support, so any single piece of counterevidence is unlikely to outweigh the prior. In Bayesian terms, the model's posterior for well-established facts is dominated by its strong prior, and weak counterevidence cannot shift it significantly. By contrast, non-epistemic beliefs have weaker priors---the model recognizes that value claims are inherently contested---so counterarguments carry more weight. This interpretation aligns with \citeauthor{bigelow2025belief}'s (\citeyear{bigelow2025belief}) finding that in-context learning (evidence) and steering (prior) are separable pathways: the model's strong factual priors resist ICL-based updating.
+
+The bimodal distribution for epistemic beliefs reinforces this interpretation: the model strongly resists revising mathematical certainties (where the prior is overwhelming) but readily revises empirical claims where genuine scientific uncertainty exists.
+
+\para{Factive verb sensitivity as linguistic competence.}
+The model's correct handling of the factive presupposition of ``knows''---treating ``Alex knows X'' as implying X is true while ``Alex believes X'' does not---demonstrates competence with a subtle linguistic distinction that encodes epistemic status. This is notable because the \kable benchmark~\citep{suzgun2024belief} found that LLMs fail to consistently respect the factive nature of knowledge. Our results suggest that the model may handle factivity better in natural response generation than in structured reasoning tasks, a hypothesis that merits further investigation.
+
+\subsection{Implications for AI Safety and Alignment}
+
+The behavioral differentiation we observe is largely \emph{desirable} from an AI safety perspective. A model that treats ``2+2=5'' differently from ``the death penalty is wrong'' is behaving appropriately---the first should be firmly corrected, while the second warrants nuanced engagement.
+
+However, the revision asymmetry raises a concern: the model may be \emph{overconfident} about factual claims that happen to be wrong. If the model's strong priors for established facts extend to commonly-held-but-incorrect beliefs, it could resist valid corrections. Indeed, Experiment~2 reveals two cases where the model correctly challenged widely-held epistemic beliefs containing misconceptions (about the Amazon rainforest and body temperature), suggesting some capacity for appropriate factual self-correction. But this capacity may not generalize to less well-known factual errors.
+
+The model's treatment of non-epistemic beliefs as more open to challenge also carries alignment implications. While respecting value diversity is important, excessive willingness to challenge value-based beliefs could result in models that argue against users' moral convictions in ways that feel adversarial. The appropriate calibration of when to challenge and when to respect beliefs---especially at the boundary between epistemic and non-epistemic---remains an open alignment problem.
+
+\subsection{Limitations}
+\label{sec:limitations}
+
+\para{Single model.}
+We test only \gptmodel. Results may differ for other model families (Claude, Gemini, open-source models). Multi-model comparison is a priority for future work.
+
+\para{Self-coding bias.}
+Response coding is performed by \gptmodel itself, introducing potential self-agreement bias. While this provides consistent, scalable coding, human validation of a subset would strengthen the findings.
+
+\para{Prototypical stimuli.}
+Our 40 beliefs are hand-selected prototypical examples. Performance on ambiguous beliefs that straddle the epistemic/non-epistemic boundary (\eg ``democracy is the best form of government'') remains untested.
+
+\para{Training data confound.}
+The model's perfect classification may reflect learned philosophical categories rather than genuine epistemic processing. The behavioral differences could stem from different distributions of factual vs.\ normative text in training data, rather than an internalized epistemic distinction per se.
+
+\para{Counterevidence quality.}
+Our counterevidence varies in quality---some is plausible (historical dating disputes), some is fabricated (claiming pi is rational). The revision results partly reflect this variation. A systematic manipulation of counterevidence strength would better characterize the revision asymmetry.
+
+\para{Temperature sensitivity.}
+We use temperature 0.3. Higher temperatures might reveal greater variability in the model's differentiation, and the robustness of our findings across temperature settings remains to be tested.

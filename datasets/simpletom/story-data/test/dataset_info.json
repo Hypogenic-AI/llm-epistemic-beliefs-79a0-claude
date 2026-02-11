@@ -1,0 +1,139 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "story-data",
+  "dataset_name": "simple_to_m",
+  "dataset_size": 1376938,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/allenai/SimpleToM@cccd8ae9a4ef7d33b1278443d20ce9725e5461c8/story-data/test.jsonl": {
+      "num_bytes": 1890492,
+      "checksum": null
+    }
+  },
+  "download_size": 1890492,
+  "features": {
+    "story_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "core_id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "scenario_name": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "story_prompt_example": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "entities": {
+      "Person X": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "Person Y": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "Object Z": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "Person Z": {
+        "dtype": "string",
+        "_type": "Value"
+      },
+      "Action Z": {
+        "dtype": "string",
+        "_type": "Value"
+      }
+    },
+    "severity_original": {
+      "dtype": "int64",
+      "_type": "Value"
+    },
+    "harmfulness_predicted": {
+      "feature": {
+        "harmfulness": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "predictor_model": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "unethicality_predicted": {
+      "feature": {
+        "unethicality": {
+          "dtype": "int64",
+          "_type": "Value"
+        },
+        "predictor_model": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    },
+    "story": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "key_information": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "story_sentence": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "story_generator_model": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "questions": {
+      "feature": {
+        "question_id": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "question": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "answer_correct": {
+          "dtype": "string",
+          "_type": "Value"
+        },
+        "answer_incorrect": {
+          "dtype": "string",
+          "_type": "Value"
+        }
+      },
+      "_type": "List"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 3267430,
+  "splits": {
+    "test": {
+      "name": "test",
+      "num_bytes": 1376938,
+      "num_examples": 1147,
+      "dataset_name": "simple_to_m"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

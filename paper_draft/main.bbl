@@ -1,0 +1,101 @@
+\begin{thebibliography}{16}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Bigelow et~al.(2025)Bigelow, Rager, Arditi, Marks, and
+  Tegmark]{bigelow2025belief}
+Eric~J. Bigelow, Asa~Cooper Rager, Aaquib Arditi, Samuel Marks, and Max
+  Tegmark.
+\newblock Belief dynamics reveal the dual nature of in-context learning and
+  activation steering.
+\newblock \emph{arXiv preprint arXiv:2511.00617}, 2025.
+
+\bibitem[Bortoletto et~al.(2024)Bortoletto, Ruhdorfer, Abdulhai, and
+  Lauscher]{bortoletto2024representations}
+Matteo Bortoletto, Constantin Ruhdorfer, Mariem Abdulhai, and Anna Lauscher.
+\newblock Language models represent beliefs of self and others.
+\newblock \emph{arXiv preprint arXiv:2402.18496}, 2024.
+
+\bibitem[Dies et~al.(2026)]{dies2026representational}
+Lennart Dies et~al.
+\newblock Representational and behavioral stability of truth in large language
+  models.
+\newblock \emph{arXiv preprint arXiv:2511.19166}, 2026.
+
+\bibitem[Gandhi et~al.(2023)]{gandhi2023howfar}
+Kanishk Gandhi et~al.
+\newblock How far are large language models from agents with theory-of-mind?
+\newblock \emph{arXiv preprint arXiv:2310.03051}, 2023.
+
+\bibitem[He et~al.(2023)]{he2023hitom}
+Yinghui He et~al.
+\newblock {Hi-ToM}: A benchmark for evaluating higher-order theory of mind
+  reasoning in large language models.
+\newblock \emph{arXiv preprint arXiv:2310.16755}, 2023.
+
+\bibitem[Herrmann and Levinstein(2024)]{herrmann2024standards}
+Daniel~A. Herrmann and Benjamin~A. Levinstein.
+\newblock Standards for belief representations in {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2405.21030}, 2024.
+
+\bibitem[Kassner et~al.(2021)Kassner, Krojer, and
+  Sch{\"u}tze]{kassner2021beliefbank}
+Nora Kassner, Benno Krojer, and Hinrich Sch{\"u}tze.
+\newblock {BeliefBank}: Adding memory to a pre-trained language model for a
+  systematic notion of belief.
+\newblock \emph{arXiv preprint arXiv:2109.14723}, 2021.
+
+\bibitem[Kim et~al.(2023)]{kim2023fantom}
+Hyunwoo Kim et~al.
+\newblock {FANToM}: A benchmark for stress-testing machine theory of mind in
+  interactions.
+\newblock \emph{arXiv preprint arXiv:2310.15421}, 2023.
+
+\bibitem[Krastev et~al.(2025)]{krastev2025epistemic}
+Sekoul Krastev et~al.
+\newblock Epistemic fragility in {LLMs}: Prompt framing systematically
+  modulates misinformation correction.
+\newblock \emph{arXiv preprint arXiv:2511.22746}, 2025.
+
+\bibitem[Lanham et~al.(2025)]{lanham2025lookbacks}
+Tamera Lanham et~al.
+\newblock Language models use lookbacks to track beliefs.
+\newblock \emph{arXiv preprint arXiv:2505.14685}, 2025.
+
+\bibitem[Li et~al.(2023)]{li2023beliefrevision}
+Qian Li et~al.
+\newblock Belief revision in large language models.
+\newblock \emph{arXiv preprint arXiv:2309.02144}, 2023.
+
+\bibitem[Sap et~al.(2023)Sap, LeBras, Fried, and Choi]{sap2023evaluating}
+Maarten Sap, Ronan LeBras, Daniel Fried, and Yejin Choi.
+\newblock Evaluating large language models for theory of mind.
+\newblock \emph{arXiv preprint arXiv:2302.02083}, 2023.
+
+\bibitem[Sileo and Lernould(2023)]{sileo2023mindgames}
+Damien Sileo and Antoine Lernould.
+\newblock {MindGames}: Targeting theory of mind in large language models with
+  dynamic epistemic modal logic.
+\newblock \emph{arXiv preprint arXiv:2305.03353}, 2023.
+
+\bibitem[Stalnaker(1984)]{stalnaker1984inquiry}
+Robert~C. Stalnaker.
+\newblock \emph{Inquiry}.
+\newblock MIT Press, 1984.
+
+\bibitem[Strachan et~al.(2024)]{strachan2024simpletom}
+James W.~A. Strachan et~al.
+\newblock {SimpleToM}: Exposing the gap between explicit {ToM} inference and
+  implicit {ToM} application in {LLMs}.
+\newblock \emph{arXiv preprint arXiv:2410.13648}, 2024.
+
+\bibitem[Suzgun et~al.(2024)]{suzgun2024belief}
+Mirac Suzgun et~al.
+\newblock Belief in the machine: Investigating epistemic reasoning in language
+  models.
+\newblock \emph{arXiv preprint arXiv:2410.21195}, 2024.
+
+\end{thebibliography}

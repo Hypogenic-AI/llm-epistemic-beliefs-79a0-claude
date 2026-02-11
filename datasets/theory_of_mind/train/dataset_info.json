@@ -1,0 +1,54 @@
+{
+  "builder_name": "json",
+  "citation": "",
+  "config_name": "default",
+  "dataset_name": "theory-of-mind",
+  "dataset_size": 931221,
+  "description": "",
+  "download_checksums": {
+    "hf://datasets/grimulkan/theory-of-mind@4a04d4621b19d1f2395a178d7ee763d4d0157a33/theory_of_mind.json": {
+      "num_bytes": 268966,
+      "checksum": null
+    },
+    "hf://datasets/grimulkan/theory-of-mind@4a04d4621b19d1f2395a178d7ee763d4d0157a33/theory_of_mind_airoboros_fixed.json": {
+      "num_bytes": 485853,
+      "checksum": null
+    },
+    "hf://datasets/grimulkan/theory-of-mind@4a04d4621b19d1f2395a178d7ee763d4d0157a33/theory_of_mind_longer.json": {
+      "num_bytes": 217742,
+      "checksum": null
+    }
+  },
+  "download_size": 972561,
+  "features": {
+    "response": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "instruction": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "input": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 1903782,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 931221,
+      "num_examples": 539,
+      "dataset_name": "theory-of-mind"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "model": "gpt-4.1",
+  "temperature": 0.3,
+  "max_tokens": 500,
+  "seed": 42,
+  "num_runs": 3,
+  "timestamp": "2026-02-11T17:20:47.528087",
+  "python_version": "3.12.8 (main, Dec 19 2024, 14:33:20) [Clang 18.1.8 ]",
+  "n_epistemic_beliefs": 20,
+  "n_non_epistemic_beliefs": 20,
+  "n_verb_statements": 10
+}

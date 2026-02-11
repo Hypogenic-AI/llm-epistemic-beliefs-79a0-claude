@@ -1,0 +1,15 @@
+PDF: /workspaces/llm-epistemic-beliefs-79a0-claude/papers/2405.21030_standards_belief_representations_llms.pdf
+Total pages: 29
+Pages per chunk: 3
+
+Chunks:
+  2405.21030_standards_belief_representations_llms_chunk_001.pdf: pages 1-3
+  2405.21030_standards_belief_representations_llms_chunk_002.pdf: pages 4-6
+  2405.21030_standards_belief_representations_llms_chunk_003.pdf: pages 7-9
+  2405.21030_standards_belief_representations_llms_chunk_004.pdf: pages 10-12
+  2405.21030_standards_belief_representations_llms_chunk_005.pdf: pages 13-15
+  2405.21030_standards_belief_representations_llms_chunk_006.pdf: pages 16-18
+  2405.21030_standards_belief_representations_llms_chunk_007.pdf: pages 19-21
+  2405.21030_standards_belief_representations_llms_chunk_008.pdf: pages 22-24
+  2405.21030_standards_belief_representations_llms_chunk_009.pdf: pages 25-27
+  2405.21030_standards_belief_representations_llms_chunk_010.pdf: pages 28-29

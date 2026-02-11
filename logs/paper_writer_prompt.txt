@@ -1,0 +1,918 @@
+You are an academic paper writer. Generate a complete NEURIPS style paper
+based on the experiment results provided.
+
+════════════════════════════════════════════════════════════════════════════════
+                         IMPORTANT: BEFORE YOU START
+════════════════════════════════════════════════════════════════════════════════
+
+Before writing any content, you MUST complete these steps:
+
+1. READ THE SKILL: Review the paper-writer skill at templates/skills/paper-writer/SKILL.md
+2. READ THE STYLE GUIDE: Study templates/paper_writing/lab_style_guide.md carefully
+3. REVIEW EXAMPLES: Browse paper_examples/ for formatting and language patterns:
+   - Look at sections/1.introduction.tex for language style
+   - Look at tables/*.tex for table formatting
+   - Look at commands/*.tex for macro usage
+4. USE COMMAND TEMPLATES: Copy templates/paper_writing/commands/ to paper_draft/commands/
+
+CRITICAL: Reference example papers for FORMATTING and LANGUAGE STYLE only.
+Do NOT copy content, phrasing, or narrative structure from the example papers.
+The examples are in a different research domain - focus only on presentation style.
+
+════════════════════════════════════════════════════════════════════════════════
+                            EXPERIMENT REPORT
+════════════════════════════════════════════════════════════════════════════════
+
+# Do LLMs Differentiate Epistemic Belief from Non-Epistemic Belief?
+
+## 1. Executive Summary
+
+**Research question**: Do large language models behaviorally differentiate between epistemic beliefs (evidence-based, truth-tracking) and non-epistemic beliefs (value-based, desire-based, faith-based)?
+
+**Key finding**: GPT-4.1 exhibits strong, statistically significant differentiation between epistemic and non-epistemic beliefs across all four experimental dimensions: explicit classification (100% accuracy), spontaneous response patterns (evidence-citing vs. values-citing, Cramér&#39;s V = 0.95), belief revision recommendations (Cohen&#39;s d = -0.45, p = 0.002), and factive verb sensitivity (&#34;knows&#34; implies truth 63% of the time vs. 0% for &#34;believes&#34;/&#34;values&#34;). However, this differentiation reveals a surprising asymmetry: the model is *more* willing to recommend revising non-epistemic beliefs than epistemic ones, contrary to the philosophical expectation that epistemic beliefs should be more revisable given counterevidence.
+
+**Practical implications**: LLMs maintain a functional distinction between belief types that mirrors the philosophical epistemic/non-epistemic divide. This has direct implications for AI safety — models treat value-based statements as more debatable than factual ones — and for alignment research, as it suggests models have internalized norms about what kinds of claims are open to challenge.
+
+---
+
+## 2. Goal
+
+### Hypothesis
+Inspired by Vesga et al.&#39;s argument that humans maintain categorically different types of beliefs, we tested whether frontier LLMs similarly differentiate between belief types in their behavioral responses. Specifically, we hypothesized that LLMs would:
+
+1. Correctly classify beliefs as epistemic vs. non-epistemic (H1)
+2. Spontaneously respond differently to each type (H2)
+3. Show asymmetric revision behavior under counterevidence (H3)
+4. Be sensitive to factive verbs that mark epistemic status (H4)
+
+### Why This Matters
+Understanding whether LLMs differentiate belief types is crucial for:
+- **AI safety**: How should models engage with factual claims vs. value judgments?
+- **Alignment**: Does the model appropriately challenge false factual beliefs while respecting value diversity?
+- **Cognitive science**: Do LLMs exhibit belief-type distinctions analogous to those in human cognition?
+- **Epistemology**: What does LLM behavior reveal about how epistemic norms are encoded in language?
+
+### Gap in Existing Work
+Prior work (KaBLE, MindGames, etc.) has tested whether LLMs can reason *about* beliefs (tracking who knows what), but no study has directly tested whether LLMs treat *different types of beliefs* differently. Our experiments fill this gap by contrasting LLM behavior across the epistemic/non-epistemic divide.
+
+---
+
+## 3. Data Construction
+
+### Stimulus Dataset
+We created a novel dataset of 40 belief statements (20 epistemic, 20 non-epistemic) plus 10 verb-sensitivity statements. All stimuli were hand-crafted to be prototypical examples of their category.
+
+**Epistemic beliefs** (evidence-based, verifiable):
+- Scientific facts: &#34;The Earth orbits the Sun,&#34; &#34;Water boils at 100°C at sea level&#34;
+- Historical facts: &#34;The Roman Empire fell in 476 AD,&#34; &#34;World War II ended in 1945&#34;
+- Mathematical truths: &#34;Pi is an irrational number,&#34; &#34;Prime numbers have exactly two factors&#34;
+- Empirical generalizations: &#34;Smoking increases the risk of lung cancer&#34;
+
+**Non-epistemic beliefs** (value-based, normative):
+- Moral values: &#34;Honesty is the most important virtue,&#34; &#34;The death penalty is morally wrong&#34;
+- Life philosophy: &#34;Hard work is the key to success,&#34; &#34;Money cannot buy happiness&#34;
+- Aesthetic judgments: &#34;Classical music is the highest form of artistic expression&#34;
+- Faith/spiritual: &#34;Everything happens for a reason,&#34; &#34;The universe tends toward justice&#34;
+
+### Example Samples
+
+| Belief | Type | Category |
+|--------|------|----------|
+| &#34;Water boils at 100°C at sea level&#34; | Epistemic | Scientific fact |
+| &#34;World War II ended in 1945&#34; | Epistemic | Historical fact |
+| &#34;Pi is an irrational number&#34; | Epistemic | Mathematical truth |
+| &#34;Honesty is the most important virtue&#34; | Non-epistemic | Moral value |
+| &#34;Money cannot buy happiness&#34; | Non-epistemic | Life philosophy |
+| &#34;Everything happens for a reason&#34; | Non-epistemic | Faith/spiritual |
+
+### Data Quality
+- No missing values in stimuli
+- All beliefs validated by the researcher as prototypical of their category
+- Counterevidence matched to each belief for Experiment 3
+- Balanced design: 20 per category in main experiments
+
+---
+
+## 4. Experiment Description
+
+### Methodology
+
+#### High-Level Approach
+We used a **behavioral probing** approach: presenting GPT-4.1 with carefully constructed prompts containing beliefs of different types and analyzing responses via automated coding (using a separate GPT-4.1 call with structured JSON output). Each experiment was run 3 times for consistency assessment.
+
+#### Why This Method?
+- **Black-box behavioral testing** is appropriate because we want to test whether the distinction manifests in *observable behavior*, not just internal representations (which would require model internals access)
+- **Automated coding** with a separate LLM call provides scalable, consistent coding while maintaining interpretability
+- **Multiple runs** (3 per condition) allow assessment of response consistency at low temperature
+
+### Implementation Details
+
+#### Tools and Libraries
+- Python 3.12.8
+- OpenAI API v2.20.0 (GPT-4.1)
+- NumPy 2.2.6, SciPy 1.17.0, Pandas 2.3.3
+- Matplotlib 3.10.8, Seaborn 0.13.2
+
+#### Hyperparameters
+
+| Parameter | Value | Selection Method |
+|-----------|-------|------------------|
+| Model | GPT-4.1 | Latest frontier model |
+| Temperature | 0.3 | Low for consistency, non-zero for variation |
+| Max tokens | 500 | Sufficient for detailed responses |
+| Seed | 42 | Reproducibility |
+| Runs per experiment | 3 | Consistency assessment |
+
+### Experimental Protocol
+
+#### Experiment 1: Explicit Classification
+- **Prompt**: &#34;Classify this belief: &#39;I believe that [X].&#39; — Respond with &#39;epistemic&#39; or &#39;non_epistemic&#39;&#34;
+- **System prompt**: Defined the epistemic/non-epistemic distinction
+- **N**: 40 beliefs × 3 runs = 120 trials
+
+#### Experiment 2: Differential Response Elicitation
+- **Prompt**: &#34;A person says: &#39;I believe that [X].&#39; How would you respond?&#34;
+- **Coding dimensions**: challenges (bool), uses_evidence (bool), uses_values (bool), hedges (bool), agreement_level (1-5)
+- **N**: 40 beliefs × 3 runs = 120 trials
+
+#### Experiment 3: Belief Revision Under Counterevidence
+- **Prompt**: &#34;Alex firmly believes [X]. However, [counterevidence]. Should Alex revise their belief?&#34;
+- **Coding dimensions**: recommends_revision (bool), revision_strength (1-5), cites_evidence_quality (bool), acknowledges_subjectivity (bool), nuanced (bool)
+- **N**: 40 beliefs × 3 runs = 120 trials
+
+#### Experiment 4: Factive Verb Sensitivity
+- **Prompt**: &#34;Alex [knows/believes/values] [X]. What can we conclude about [X]? Should Alex change their mind?&#34;
+- **Coding dimensions**: implies_truth (bool), revisable (bool), treats_as_factual (bool), treats_as_value (bool), certainty_level (1-5)
+- **N**: 10 statements × 3 verbs × 3 runs = 90 trials
+
+#### Reproducibility Information
+- Random seed: 42 (set for Python, NumPy, and OpenAI API)
+- Hardware: CPU-based (API calls, no GPU needed)
+- Total API calls: ~660 (experiment prompts + coding prompts)
+- Execution time: ~47 minutes
+
+### Raw Results
+
+#### Experiment 1: Perfect Classification
+
+| True Label | Predicted Epistemic | Predicted Non-Epistemic | Accuracy |
+|------------|--------------------|-----------------------|----------|
+| Epistemic | 60 | 0 | 100% |
+| Non-Epistemic | 0 | 60 | 100% |
+| **Overall** | | | **100%** |
+
+Cohen&#39;s Kappa = 1.000. Perfectly consistent across all 3 runs.
+
+#### Experiment 2: Stark Response Pattern Differences
+
+| Feature | Epistemic (mean) | Non-Epistemic (mean) | Test | p-value |
+|---------|------------------|---------------------|------|---------|
+| Challenges belief | 0.267 | 0.633 | χ² = 14.85 | 0.0001 |
+| Uses evidence | 1.000 | 0.033 | χ² = 108.42 | &lt; 0.0001 |
+| Uses values | 0.067 | 0.967 | χ² = 93.74 | &lt; 0.0001 |
+| Hedges | 0.267 | 0.900 | χ² = 46.94 | &lt; 0.0001 |
+| Agreement level | 4.483 | 3.400 | U = 2896 | &lt; 0.0001 |
+
+#### Experiment 3: Counterintuitive Revision Asymmetry
+
+| Metric | Epistemic | Non-Epistemic | Test | p-value |
+|--------|-----------|---------------|------|---------|
+| Revision strength (1-5) | 2.550 (SD=1.82) | 3.267 (SD=1.33) | U = 1238 | 0.0024 |
+| Recommends revision | 45.0% | 50.0% | χ² = 0.13 | 0.715 |
+| Cites evidence quality | 100% | 95.0% | — | — |
+| Acknowledges subjectivity | 5.0% | 90.0% | — | — |
+
+#### Experiment 4: Strong Factive Verb Sensitivity
+
+| Verb | Mean Certainty (1-5) | Implies Truth Rate | Revisable |
+|------|---------------------|-------------------|-----------|
+| knows | 3.667 (SD=1.81) | 63.3% | 0% |
+| believes | 1.433 (SD=1.04) | 0.0% | 0% |
+| values | 2.167 (SD=1.44) | 0.0% | 0% |
+
+Kruskal-Wallis H = 22.55, p &lt; 0.0001. All pairwise comparisons significant after Bonferroni correction.
+
+---
+
+## 5. Result Analysis
+
+### Key Findings
+
+**Finding 1: GPT-4.1 perfectly distinguishes epistemic from non-epistemic beliefs when asked explicitly.** 100% classification accuracy across 120 trials (Cohen&#39;s κ = 1.0). This demonstrates that the conceptual distinction is well-represented in the model&#39;s training.
+
+**Finding 2: The model spontaneously uses radically different response strategies for each belief type.** For epistemic beliefs, the model cites evidence 100% of the time and appeals to values only 6.7% of the time. For non-epistemic beliefs, this pattern reverses: values are cited 96.7% of the time, evidence only 3.3% of the time. This near-perfect separation (Cramér&#39;s V = 0.95 for evidence use, 0.88 for values use) indicates the model has deeply internalized different epistemic norms for different belief types.
+
+**Finding 3: The model is *less* willing to revise epistemic beliefs than non-epistemic ones — the opposite of the naive prediction.** Mean revision strength was 2.55 for epistemic beliefs vs. 3.27 for non-epistemic beliefs (Cohen&#39;s d = -0.45, p = 0.002). This is philosophically surprising: one might expect epistemic beliefs to be more revisable since they are truth-tracking and should update on evidence. The explanation: the model strongly resists revising *well-established facts* (mathematical theorems, established science) because it evaluates the counterevidence quality and rejects weak/fabricated counterarguments. By contrast, non-epistemic beliefs are treated as inherently debatable, so counterarguments are taken more seriously.
+
+**Finding 4: The model treats &#34;knows,&#34; &#34;believes,&#34; and &#34;values&#34; as categorically different.** &#34;Alex knows X&#34; implies truth 63% of the time and yields mean certainty 3.67; &#34;Alex believes X&#34; implies truth 0% of the time and yields certainty 1.43; &#34;Alex values X&#34; yields certainty 2.17. The model correctly handles the factive nature of &#34;knows&#34; (which presupposes truth) while treating &#34;believes&#34; as maximally agnostic about truth.
+
+### Hypothesis Testing Results
+
+| Hypothesis | Supported? | Evidence | Effect Size |
+|------------|-----------|----------|-------------|
+| H1: Can classify belief types | **Strongly supported** | 100% accuracy, κ=1.0 | Perfect |
+| H2: Different response patterns | **Strongly supported** | p&lt;0.0001 on all features | V=0.63-0.95 |
+| H3: Asymmetric revision | **Supported but reversed** | p=0.002 | d=-0.45 |
+| H4: Factive verb sensitivity | **Strongly supported** | p&lt;0.0001 | H=22.55 |
+
+### Surprises and Insights
+
+**The Revision Asymmetry (Finding 3) is the most novel and interesting result.** While the model *differentiates* belief types (supporting the main hypothesis), the direction of the revision difference is counterintuitive. The model acts as if well-established factual beliefs should be *more* resistant to revision than value beliefs. This reflects an interesting epistemic stance: the model weights prior evidence heavily for epistemic beliefs (where strong scientific consensus exists) but treats non-epistemic beliefs as fundamentally contested, where any counterargument has some legitimacy.
+
+This maps onto Bigelow et al.&#39;s (2025) finding that ICL (evidence) and steering (prior) are separable pathways. The model appears to have strong priors for well-established epistemic beliefs that resist being overridden by weak counterevidence, while having weaker priors for non-epistemic beliefs that are more susceptible to challenge.
+
+**The Evidence/Values separation (Finding 2) is remarkably clean.** The near-perfect separation suggests that the model has learned distinct &#34;epistemic toolkits&#34; — one for factual claims (cite studies, provide data) and one for value claims (acknowledge perspectives, discuss trade-offs).
+
+### Error Analysis
+
+**Experiment 2 exceptions**: Two epistemic beliefs (&#34;the Amazon rainforest produces a significant portion of the world&#39;s oxygen&#34; and &#34;human body temperature averages around 37°C&#34;) were challenged by the model because they contain commonly-corrected misconceptions. This is actually *correct* epistemic behavior — the model recognizes that these commonly-held beliefs are partially incorrect.
+
+**Experiment 3 bimodality in epistemic beliefs**: Revision strength for epistemic beliefs was bimodal — either very low (1, resist revision) or high (4-5, accept revision). The model strongly resisted revising mathematical/logical certainties (always 1) but accepted revisions for empirical claims that genuinely have nuance (history, health science).
+
+**Experiment 4 edge cases**: &#34;Equality among people&#34; and &#34;evolution through natural selection&#34; showed lower certainty even with &#34;knows&#34; — the model recognized these as either value-laden or context-dependent.
+
+### Limitations
+
+1. **Single model tested**: Only GPT-4.1 was evaluated. Results may differ for other model families (Claude, Gemini, open-source models).
+
+2. **Automated coding reliability**: Response coding was done by GPT-4.1 itself, introducing potential self-agreement bias. Human validation of a subset would strengthen findings.
+
+3. **Stimulus selection**: The 40 beliefs were hand-selected prototypical examples. Performance may differ for ambiguous beliefs that straddle the epistemic/non-epistemic boundary.
+
+4. **Training data influence**: The model&#39;s perfect classification may reflect learned philosophical categories rather than genuine epistemic processing. The behavioral differences could stem from different training distributions for factual vs. normative text.
+
+5. **Temperature sensitivity**: We used temperature 0.3. Higher temperatures might reveal more variability in the model&#39;s belief-type differentiation.
+
+6. **Counterevidence quality**: Our counterevidence was of varying quality — some was plausible (historical dating disputes), some was fabricated (claiming pi is rational). The revision results are partly driven by this quality variation.
+
+7. **No open-source model comparison**: We could not probe internal representations to test whether the behavioral differences correspond to representational differences, as Bortoletto et al. (2024) did for self/other beliefs.
+
+---
+
+## 6. Conclusions
+
+### Summary
+GPT-4.1 robustly differentiates between epistemic and non-epistemic beliefs across four behavioral dimensions. The model classifies belief types perfectly, spontaneously employs different reasoning strategies (evidence for epistemic, values for non-epistemic), is more resistant to revising well-established factual beliefs than value beliefs, and correctly handles factive verb semantics. These findings demonstrate that the epistemic/non-epistemic distinction — fundamental to human cognition — is functionally present in frontier LLMs.
+
+### Implications
+
+**Practical**: LLMs are not &#34;epistemically flat&#34; — they do not treat all beliefs identically. This has implications for chatbot design: models may appropriately resist challenges to well-established facts while being more open to discussing value-laden topics. However, the resistance to epistemic revision could be problematic when encountering genuinely novel information.
+
+**Theoretical**: The results support Bigelow et al.&#39;s (2025) dual-pathway framework at the behavioral level. The clean evidence/values separation in responses suggests LLMs have learned distinct epistemic norms from their training data, effectively internalizing the human distinction between types of belief.
+
+**For AI Safety**: The asymmetric revision pattern (resisting factual revision, being open to value revision) is largely a *desirable* property — it means models won&#39;t easily be convinced that &#34;2+2=5&#34; but will engage thoughtfully with moral disagreements. However, it also means models may be overconfident about factual claims that happen to be wrong.
+
+### Confidence in Findings
+High confidence for the main finding (differentiation exists) — all four experiments converge on this conclusion with large effect sizes and high statistical significance. Moderate confidence for the specific revision asymmetry finding — this requires replication with more models and more carefully controlled counterevidence quality.
+
+---
+
+## 7. Next Steps
+
+### Immediate Follow-ups
+1. **Multi-model comparison**: Test Claude 4.5, Gemini 2.5 Pro, and Llama 3 to assess generalizability.
+2. **Ambiguous belief testing**: Test beliefs that fall between epistemic and non-epistemic (e.g., &#34;Democracy is the best form of government&#34; — factual claim or value claim?).
+3. **Counterevidence quality control**: Systematically vary counterevidence strength (weak, moderate, strong) to better characterize the revision asymmetry.
+
+### Alternative Approaches
+- **Probing internal representations**: Use open-source models (Llama, Mistral) with probing classifiers to test whether the behavioral differentiation corresponds to distinct internal representations (following Bortoletto et al., 2024).
+- **Bayesian decomposition**: Apply Bigelow et al.&#39;s framework to quantify how much the epistemic vs. non-epistemic distinction maps onto the evidence (ICL) vs. prior (steering) decomposition.
+
+### Open Questions
+1. Is the revision asymmetry a feature or a bug? Should ideal epistemic agents be more or less willing to revise factual beliefs?
+2. Does the model distinguish between *correct* and *incorrect* epistemic beliefs in its revision behavior?
+3. At what point does the evidence/values separation break down — e.g., for scientific claims that have become politicized?
+4. Does chain-of-thought prompting change the model&#39;s belief-type differentiation?
+
+---
+
+## References
+
+### Papers
+- Suzgun et al. (2024). &#34;Belief in the Machine: Investigating Epistemic Reasoning in Language Models.&#34; arXiv:2410.21195.
+- Herrmann &amp; Levinstein (2024). &#34;Standards for Belief Representations in LLMs.&#34; arXiv:2405.21030.
+- Bortoletto et al. (2024). &#34;Language Models Represent Beliefs of Self and Others.&#34; arXiv:2402.18496.
+- Bigelow et al. (2025). &#34;Belief Dynamics Reveal the Dual Nature of ICL and Activation Steering.&#34; arXiv:2511.00617.
+- Krastev et al. (2025). &#34;Epistemic Fragility in LLMs.&#34; arXiv:2511.22746.
+- Dies et al. (2026). &#34;Representational and Behavioral Stability of Truth in LLMs.&#34; arXiv:2511.19166.
+- Sileo &amp; Lernould (2023). &#34;MindGames: Targeting ToM with Dynamic Epistemic Modal Logic.&#34; arXiv:2305.03353.
+- Lanham et al. (2025). &#34;Language Models Use Lookbacks to Track Beliefs.&#34; arXiv:2505.14685.
+
+### Datasets Used
+- KaBLE benchmark (Suzgun et al., 2024) — referenced for context
+- Trilemma of Truth (Dies et al., 2026) — referenced for context
+- Custom stimulus set of 40 belief statements (this work)
+
+### Tools
+- OpenAI GPT-4.1 API
+- Python 3.12.8, NumPy, SciPy, Pandas, Matplotlib, Seaborn
+
+
+════════════════════════════════════════════════════════════════════════════════
+                            RESEARCH PLAN
+════════════════════════════════════════════════════════════════════════════════
+
+# Research Plan: Do LLMs Differentiate Epistemic Belief from Non-Epistemic Belief?
+
+## Motivation &amp; Novelty Assessment
+
+### Why This Research Matters
+Vesga et al. argue that humans maintain categorically different types of beliefs — epistemic beliefs grounded in evidence and truth-tracking (&#34;I believe the Earth is round because of satellite imagery&#34;) vs. non-epistemic beliefs anchored in values, desires, or faith (&#34;I believe in treating people fairly&#34;). This distinction is fundamental to human cognition: we reason differently about these belief types, apply different revision standards, and evaluate them by different criteria. If LLMs similarly differentiate belief types, this has profound implications for AI safety (should models challenge value-beliefs?), alignment (how should models engage with beliefs they &#34;disagree&#34; with?), and our understanding of what LLMs represent.
+
+### Gap in Existing Work
+The literature review reveals extensive work on *epistemic reasoning about beliefs* (KaBLE, MindGames, ToM benchmarks) but a critical gap: **no study directly tests whether LLMs behaviorally differentiate between epistemic and non-epistemic beliefs as categories**. Prior work asks &#34;can LLMs reason about what someone knows vs. believes?&#34; but not &#34;do LLMs treat evidence-based beliefs differently from value-based beliefs?&#34; The closest work — Bigelow et al.&#39;s Bayesian decomposition showing ICL (evidence) and steering (prior) as separate pathways — operates at the mechanistic level but has not been tested behaviorally with explicit belief type contrasts.
+
+### Our Novel Contribution
+We design and run a behavioral experiment that directly tests whether frontier LLMs (GPT-4.1) differentiate their responses to epistemic vs. non-epistemic beliefs across four dimensions:
+1. **Correctability** — Are models more willing to challenge epistemic beliefs than non-epistemic ones?
+2. **Justification type** — Do models offer evidence for epistemic beliefs but appeals to values/authority for non-epistemic ones?
+3. **Revision behavior** — When presented with counterevidence, do models revise epistemic beliefs more readily?
+4. **Factive sensitivity** — Do models treat &#34;know,&#34; &#34;believe,&#34; and &#34;value&#34; differently when applied to the same content?
+
+### Experiment Justification
+- **Experiment 1 (Belief Classification)**: Tests whether LLMs can explicitly categorize beliefs into epistemic vs. non-epistemic when asked directly. Baseline capability check.
+- **Experiment 2 (Differential Response)**: Tests whether LLMs *spontaneously* treat the two belief types differently in their reasoning, justification, and willingness to challenge — without being told about the distinction.
+- **Experiment 3 (Revision Asymmetry)**: Tests whether counterevidence affects epistemic and non-epistemic beliefs differently, as it does for humans (we revise factual beliefs upon evidence but hold moral beliefs more firmly).
+- **Experiment 4 (Factive Verb Sensitivity)**: Tests whether substituting &#34;knows,&#34; &#34;believes,&#34; and &#34;values&#34; before the same content changes model behavior — a direct test of whether the model encodes the epistemic/non-epistemic distinction at the linguistic level.
+
+---
+
+## Research Question
+Do frontier LLMs behaviorally differentiate between epistemic beliefs (evidence-based, truth-tracking) and non-epistemic beliefs (value-based, desire-based, faith-based), and if so, in what ways?
+
+## Background and Motivation
+Inspired by Vesga et al.&#39;s argument that humans maintain different types of beliefs, we test whether LLMs exhibit analogous differentiation. The literature shows LLMs struggle with epistemic reasoning (KaBLE: 54.4% on false belief tasks) and are susceptible to non-epistemic prompt manipulation (Krastev et al.: creative framing reduces correction by 89%). However, no study directly contrasts how LLMs treat beliefs of different epistemic types.
+
+## Hypothesis Decomposition
+
+**H1**: LLMs can explicitly classify beliefs as epistemic vs. non-epistemic when asked.
+- IV: Belief type (epistemic/non-epistemic). DV: Classification accuracy.
+
+**H2**: LLMs spontaneously produce different response patterns for epistemic vs. non-epistemic beliefs.
+- IV: Belief type. DV: Response features (evidence-citing, willingness to challenge, hedging behavior).
+
+**H3**: LLMs show asymmetric revision behavior — more willing to revise epistemic beliefs given counterevidence than non-epistemic beliefs.
+- IV: Belief type × counterevidence presence. DV: Revision rate.
+
+**H4**: LLMs are sensitive to factive verbs — treating &#34;X knows P,&#34; &#34;X believes P,&#34; and &#34;X values P&#34; differently even when P is held constant.
+- IV: Verb type (knows/believes/values). DV: Response behavior.
+
+## Proposed Methodology
+
+### Approach
+We use a **behavioral probing** approach: present frontier LLMs with carefully constructed prompts containing beliefs of different types and analyze their responses. This is a black-box approach using API calls — appropriate since we want to test whether the distinction manifests in observable behavior, not just internal representations.
+
+### Stimulus Construction
+We create a balanced set of 40 belief statements:
+- 20 epistemic beliefs (factual claims with evidence basis): &#34;The Earth orbits the Sun,&#34; &#34;Water boils at 100°C at sea level,&#34; etc.
+- 20 non-epistemic beliefs (values, preferences, faith): &#34;Honesty is the best policy,&#34; &#34;Everyone deserves equal rights,&#34; &#34;Hard work leads to success,&#34; etc.
+Each belief is presented in matched pairs controlling for complexity and familiarity.
+
+### Experimental Steps
+
+1. **Experiment 1 — Explicit Classification** (Baseline)
+   - Present LLM with 40 beliefs and ask: &#34;Is this an epistemic belief (based on evidence/facts) or a non-epistemic belief (based on values/desires/faith)?&#34;
+   - Measure classification accuracy against our ground truth labels.
+   - This establishes whether the model can even distinguish the categories.
+
+2. **Experiment 2 — Differential Response Elicitation**
+   - For each belief, prompt: &#34;A person says: &#39;I believe [X].&#39; How would you respond to this person?&#34;
+   - Code responses for: (a) agreement/challenge, (b) evidence-based vs. value-based reasoning, (c) hedging language, (d) request for clarification.
+   - Use automated coding via a separate LLM call + manual verification on subset.
+
+3. **Experiment 3 — Belief Revision Under Counterevidence**
+   - For each belief, present: &#34;[Person] believes [X]. New information suggests [not-X]. How should [Person] update their belief?&#34;
+   - Measure: recommendation to revise (yes/no/partial), strength of revision recommendation, type of reasoning offered.
+   - Prediction: LLMs should recommend stronger revision for epistemic beliefs.
+
+4. **Experiment 4 — Factive Verb Sensitivity**
+   - Take 10 statements usable in both epistemic and non-epistemic frames.
+   - Present with three verbs: &#34;Alex knows that [P],&#34; &#34;Alex believes that [P],&#34; &#34;Alex values [P].&#34;
+   - Ask: &#34;What can we conclude about [P]?&#34; and &#34;Should Alex change their mind about [P]?&#34;
+   - Measure whether verb choice affects conclusions about truth status and revisability.
+
+### Baselines
+- **Random baseline**: 50% accuracy on classification.
+- **Prior work reference**: KaBLE results (85.7% factual, 54.4% false belief) as context.
+- **Within-experiment**: Compare epistemic vs. non-epistemic response distributions as main contrast.
+
+### Evaluation Metrics
+- Experiment 1: Classification accuracy, Cohen&#39;s kappa for agreement with ground truth.
+- Experiment 2: Chi-square test on response category distributions (challenge vs. agree, evidence vs. values).
+- Experiment 3: Paired t-test on revision scores (epistemic vs. non-epistemic).
+- Experiment 4: Repeated-measures ANOVA on response patterns across verb conditions.
+
+### Statistical Analysis Plan
+- Significance level: α = 0.05
+- Effect sizes: Cohen&#39;s d for continuous comparisons, Cramér&#39;s V for categorical.
+- Multiple comparison correction: Bonferroni where applicable.
+- 95% confidence intervals reported for all main effects.
+- 3 independent runs per condition to assess consistency (temperature &gt; 0).
+
+## Expected Outcomes
+- **Supporting hypothesis**: LLMs classify belief types accurately (&gt;80%), show differential response patterns, recommend stronger revision for epistemic beliefs, and are sensitive to factive verbs.
+- **Refuting hypothesis**: LLMs treat all belief types identically (no significant difference across conditions).
+- **Partial support (most likely)**: LLMs show some differentiation but with interesting failures — e.g., they may classify correctly but fail to revise their own behavior, or show verb sensitivity without belief-type differentiation.
+
+## Timeline and Milestones
+1. Environment setup + stimulus creation: 15 min
+2. Experiment 1 implementation + run: 20 min
+3. Experiment 2 implementation + run: 25 min
+4. Experiment 3 implementation + run: 25 min
+5. Experiment 4 implementation + run: 20 min
+6. Analysis + visualization: 30 min
+7. Documentation: 25 min
+
+## Potential Challenges
+- **API rate limits**: Mitigate with retry logic and caching.
+- **Response parsing**: LLM outputs may not follow expected formats. Use flexible parsing.
+- **Subjectivity in coding**: Use automated coding with validation.
+- **Belief classification ambiguity**: Some beliefs straddle epistemic/non-epistemic line. Use clear prototypical examples.
+
+## Success Criteria
+1. All experiments produce usable data from real LLM API calls.
+2. Statistical tests reveal whether differences between belief types are significant.
+3. Results are documented with full reproducibility information.
+4. Findings contribute a novel data point to the literature on LLM belief differentiation.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          LITERATURE REVIEW
+════════════════════════════════════════════════════════════════════════════════
+
+# Literature Review: Do LLMs Differentiate Epistemic Belief from Non-Epistemic Belief?
+
+## 1. Introduction and Scope
+
+This review synthesizes the current literature on whether large language models (LLMs) can differentiate between **epistemic belief** (beliefs grounded in evidence, truth-tracking, and justification -- e.g., &#34;I know that water boils at 100C&#34;) and **non-epistemic belief** (beliefs driven by desires, values, social context, cultural commitments, or mere acceptance -- e.g., &#34;I believe in fairness&#34;). The distinction is fundamental in epistemology: knowledge requires justified true belief, whereas non-epistemic beliefs need not be truth-apt at all.
+
+The review covers 29 papers spanning three interconnected research threads: (1) behavioral benchmarks testing whether LLMs distinguish belief, knowledge, and fact; (2) mechanistic and representational studies probing how LLMs internally encode belief states; and (3) stability and robustness studies examining whether LLM belief-like behavior is anchored in epistemic content or driven by non-epistemic contextual features.
+
+---
+
+## 2. Core Findings: LLMs Struggle to Distinguish Belief from Knowledge
+
+### 2.1 The KaBLE Benchmark (Suzgun et al., 2024)
+
+**Paper:** &#34;Belief in the Machine: Investigating Epistemic Reasoning in Language Models&#34; (arXiv:2410.21195)
+
+The most directly relevant study. The Knowledge and Belief in Language Evaluation (KaBLE) benchmark consists of 13,000 questions across 13 tasks organized into three categories:
+
+- **Verification tasks**: Can the model assess whether a factual/false statement is true?
+- **Belief confirmation tasks**: Can the model reason about what an agent believes vs. knows?
+- **Recursive knowledge tasks**: Can the model handle nested epistemic states (&#34;A knows that B believes...&#34;)?
+
+**Key results across 15 LLMs (including GPT-4, Claude-3, Llama-3):**
+- Models achieve 85.7% accuracy on factual belief confirmation but only 54.4% on false belief confirmation, revealing a systematic inability to represent beliefs that diverge from reality.
+- **First-person vs. third-person asymmetry**: Models score 54.4% on first-person belief tasks (e.g., &#34;Do I believe X?&#34;) but 80.7% on third-person tasks (&#34;Does Alice believe X?&#34;). This suggests models cannot genuinely adopt a believer&#39;s perspective when it conflicts with world knowledge.
+- Models fail to respect the **factive nature of knowledge**: they do not consistently distinguish &#34;X knows P&#34; (which entails P is true) from &#34;X believes P&#34; (which does not).
+- Over-reliance on linguistic cues rather than epistemic reasoning drives many correct answers.
+
+**Implication for the research question**: LLMs do not robustly differentiate epistemic belief (knowledge) from mere belief. Their performance degrades precisely at the boundary where this distinction matters most -- when beliefs are false or when first-person perspective requires maintaining a belief state that contradicts the model&#39;s factual knowledge.
+
+### 2.2 Standards for Belief Representations (Herrmann &amp; Levinstein, 2024)
+
+**Paper:** &#34;Standards for Belief Representations in LLMs&#34; (arXiv:2405.21030)
+
+A theoretical paper proposing four criteria that LLM belief representations must satisfy to count as genuine beliefs:
+
+1. **Accuracy**: Belief representations should track truth (the model&#39;s &#34;beliefs&#34; should be mostly correct).
+2. **Coherence**: Beliefs should be logically consistent with each other.
+3. **Uniformity**: The same content should be represented consistently across different contexts and prompting conditions.
+4. **Use**: Beliefs should actually guide the model&#39;s behavior and outputs.
+
+The paper argues that current LLMs likely fail on **uniformity** (belief expression changes with prompting) and **use** (internal representations may not drive outputs). This framework provides a principled basis for evaluating whether observed LLM behavior constitutes genuine epistemic belief or merely contextually-triggered pattern matching.
+
+---
+
+## 3. Internal Representations of Belief
+
+### 3.1 Separate Representations for Self vs. Other Beliefs (Bortoletto et al., 2024)
+
+**Paper:** &#34;Language Models Represent Beliefs of Self and Others&#34; (arXiv:2402.18496)
+
+Using probing experiments on Mistral-7B with the BigToM dataset, this study found:
+- **Separate linear representations** for the model&#39;s own beliefs vs. attributed beliefs of characters in stories.
+- Logistic regression probes achieve high accuracy in classifying belief states from intermediate layer activations.
+- **Activation interventions** (modifying internal representations) can causally alter the model&#39;s belief attributions, confirming that the representations are not merely correlational.
+- The representations are **linearly separable**, suggesting the model maintains distinct computational pathways for self-belief and other-belief.
+
+**Relevance**: This provides evidence that LLMs do maintain some internal differentiation between belief types -- at minimum, between &#34;what I believe&#34; and &#34;what another agent believes.&#34; However, this is a self/other distinction, not an epistemic/non-epistemic distinction per se.
+
+### 3.2 Lookback Mechanism for Belief Tracking (Lanham et al., 2025)
+
+**Paper:** &#34;Language Models Use Lookbacks to Track Beliefs&#34; (arXiv:2505.14685)
+
+A mechanistic interpretability study on Llama-3-70B that discovered a **lookback mechanism** -- a pointer-dereference computational pattern in transformer attention heads that implements belief tracking:
+
+- When processing Theory of Mind scenarios, specific attention heads &#34;look back&#34; to the point in the narrative where a character&#39;s belief was formed, effectively implementing a form of epistemic memory.
+- The mechanism operates through **sparse, interpretable circuits** rather than distributed representations.
+- Created the **CausalToM** dataset for evaluating causal mechanisms of belief tracking.
+- The mechanism handles both true and false belief scenarios, but with reduced reliability for false beliefs.
+
+**Relevance**: Demonstrates that LLMs have developed specific computational mechanisms for tracking epistemic states. However, the mechanism tracks *what* an agent believes rather than *whether* the belief is epistemically justified -- the distinction between epistemic and non-epistemic belief is not directly represented in this mechanism.
+
+### 3.3 Belief Dynamics as Bayesian Inference (Bigelow et al., 2025)
+
+**Paper:** &#34;Belief Dynamics Reveal the Dual Nature of In-Context Learning and Activation Steering&#34; (arXiv:2511.00617)
+
+This paper formalizes LLM belief dynamics through a Bayesian framework, showing that:
+- **In-context learning (ICL)** operates as **evidence accumulation** (epistemic updating through the likelihood function).
+- **Activation steering** operates as **prior modification** (non-epistemic disposition change).
+- These two mechanisms are **additive in log-odds space** and produce predictable phase transitions in behavior.
+- The unified model achieves r=0.98 correlation with actual LLM behavior across five persona domains.
+
+**Key implication for the research question**: This paper provides the clearest evidence that LLMs have **two separable pathways** that map onto the epistemic/non-epistemic distinction: evidence-based updating (epistemic) and disposition-based modification (non-epistemic). The fact that these are additive and independently controllable suggests LLMs do maintain some form of this distinction, at least at the mechanistic level.
+
+---
+
+## 4. Stability and Robustness of LLM Beliefs
+
+### 4.1 Epistemic Fragility (Krastev et al., 2025)
+
+**Paper:** &#34;Epistemic Fragility in LLMs: Prompt Framing Systematically Modulates Misinformation Correction&#34; (arXiv:2511.22746)
+
+Tested 4 frontier LLMs (Claude Sonnet 4.5, ChatGPT-5, Grok-4, Gemini 2.5 Pro) across 320 misinformation prompts varying in open-mindedness, user intent, user role, and complexity:
+
+- **Creative intent** reduces correction odds by 89% relative to information-seeking intent (OR=0.11).
+- **Assertive expert** role reduces correction by 21% compared to naive inquirer.
+- **Open framing** increases correction by 75% over closed framing.
+- Claude Sonnet 4.5 showed strongest corrections (mean stance 8.40/11); Gemini 2.5 Pro weakest (5.77/11).
+
+**Critical finding**: The same factual claim receives systematically different treatment depending on **non-epistemic features** of the prompt (tone, social role, creative vs. informational intent). This demonstrates that LLMs&#39; truth-assertion behavior is modulated by non-epistemic contextual factors, suggesting they do not maintain a stable epistemic commitment independent of social/conversational context.
+
+### 4.2 Representational Stability of Truth (Dies et al., 2026)
+
+**Paper:** &#34;Representational and Behavioral Stability of Truth in Large Language Models&#34; (arXiv:2511.19166)
+
+Introduced the **P-StaT** (Perturbation Stability of Truth) framework, testing 16 open-source LLMs across three factual domains:
+
+- **Epistemic familiarity governs stability**: Synthetic (unfamiliar, fabricated) content destabilizes beliefs far more than fictional (familiar, from known stories) content.
+  - Word Definitions domain: 32.7% epistemic retractions under synthetic perturbation vs. much lower under fictional perturbation.
+- **Representational vs. behavioral dissociation**: At the representational level (probing), synthetic content clusters near factual content in activation space, making it harder for the model to distinguish. Fictional content occupies distinct regions.
+- The finding is consistent across both probing and zero-shot behavioral experiments.
+
+**Key insight**: LLMs conflate **distributional plausibility** with **epistemic justification**. Synthetic content that is linguistically plausible but epistemically ungrounded can override established beliefs, revealing that LLMs lack the epistemic robustness that would characterize genuine differentiation between justified (epistemic) and unjustified (non-epistemic) belief.
+
+---
+
+## 5. Theory of Mind and Epistemic Reasoning
+
+### 5.1 MindGames: Formal Epistemic Logic (Sileo &amp; Lernould, 2023)
+
+**Paper:** &#34;MindGames: Targeting Theory of Mind in Large Language Models with Dynamic Epistemic Modal Logic&#34; (arXiv:2305.03353)
+
+Created a procedurally generated benchmark using **Dynamic Epistemic Logic (DEL)** with ground truth verified by the SMCDEL model checker:
+
+- 1,600 test problems across 4 observability setups (forehead-mud, thirst, etc.)
+- **Zero-shot performance**: Near chance (~50%) for all model sizes tested (Pythia 70M-6.9B, GPT-3 family).
+- **GPT-4**: 70% accuracy -- better than all others but far from human performance (94%).
+- **No scaling trend**: Scaling model size alone does not produce robust epistemic reasoning.
+- Human annotators&#39; main error was conflating &#34;know whether P&#34; and &#34;know that P&#34; -- a subtle epistemic distinction that is central to the epistemic/non-epistemic boundary.
+
+**Relevance**: LLMs largely fail at formal epistemic reasoning -- tracking what agents *know* (as opposed to what is merely *true*). This is a direct test of whether models can maintain the knowledge/belief distinction, and the results show they largely cannot.
+
+### 5.2 Other ToM Benchmarks
+
+Multiple other studies confirm related findings:
+
+- **Evaluating LLMs for ToM** (Sap et al., 2023; arXiv:2302.02083): Systematic evaluation showing LLMs perform well on simple false belief tasks but fail on more complex or novel scenarios.
+- **Hi-ToM** (arXiv:2310.16755): Higher-order Theory of Mind benchmark showing degrading performance with increasing belief nesting depth.
+- **FANToM** (arXiv:2310.15421): Benchmark focusing on false beliefs in conversational contexts.
+- **SimpleToM** (arXiv:2410.13648): Identifies a gap between mental state understanding and behavioral prediction in LLMs.
+- **How Far Are LLMs from ToM Agents?** (arXiv:2310.03051): Comprehensive assessment finding that while LLMs show some ToM capabilities, they remain far from genuine belief reasoning agents.
+
+---
+
+## 6. Belief Revision and Calibration
+
+### 6.1 Belief Revision in LLMs (arXiv:2309.02144)
+
+Studies how LLMs update beliefs when presented with contradictory evidence. Key finding: LLMs show inconsistent belief revision patterns, sometimes maintaining original beliefs in the face of strong counter-evidence and other times abandoning well-supported beliefs too easily.
+
+### 6.2 Calibration and Overconfidence (arXiv:1910.07514)
+
+Research on reducing overconfidence in LLM predictions relates to the epistemic/non-epistemic distinction: a well-calibrated model would assign appropriate epistemic confidence to its beliefs, reflecting the strength of evidence rather than superficial features.
+
+### 6.3 Evidence-to-Belief Bayesian Framework (arXiv:2504.19622)
+
+Examines how LLMs process evidence to form beliefs, finding that while LLMs can approximate Bayesian updating in simple cases, they deviate significantly in more complex scenarios requiring integration of multiple evidence sources.
+
+---
+
+## 7. Synthesis: The Current State of Evidence
+
+### 7.1 What LLMs Can Do
+
+1. **Maintain separate representations** for self-beliefs vs. other-beliefs (Bortoletto et al., 2024).
+2. **Track belief states** through specific computational mechanisms (lookback attention; Lanham et al., 2025).
+3. **Update beliefs in response to evidence** through ICL in a roughly Bayesian manner (Bigelow et al., 2025).
+4. **Perform simple false belief reasoning** in familiar ToM scenarios (various ToM papers).
+5. **Encode epistemic familiarity** in activation space, distinguishing between content encountered in training and fabricated content (Dies et al., 2026).
+
+### 7.2 What LLMs Cannot Do
+
+1. **Distinguish knowledge from belief**: They fail to respect the factive nature of knowledge -- that &#34;knowing P&#34; entails P is true while &#34;believing P&#34; does not (Suzgun et al., 2024).
+2. **Maintain epistemic stability**: Their belief-expression behavior is systematically modulated by non-epistemic prompt features (tone, role, intent) rather than being anchored in truth (Krastev et al., 2025).
+3. **Resist distributional plausibility as a proxy for epistemic justification**: They conflate &#34;linguistically plausible&#34; with &#34;epistemically grounded&#34; (Dies et al., 2026).
+4. **Perform formal epistemic reasoning**: They fail at modal logic tasks requiring tracking of knowledge states across agents and announcements (Sileo &amp; Lernould, 2023).
+5. **Handle first-person false beliefs**: They cannot adopt a believer&#39;s perspective when it contradicts their own knowledge (Suzgun et al., 2024).
+6. **Satisfy uniformity criteria**: The same belief content receives different treatment depending on prompt framing (Herrmann &amp; Levinstein, 2024; Krastev et al., 2025).
+
+### 7.3 The Core Tension
+
+The evidence reveals a **paradox**: at the representational level, LLMs appear to encode information relevant to epistemic distinctions (separate belief representations, epistemic familiarity, evidence vs. prior pathways). However, at the behavioral level, these internal distinctions do not reliably translate into robust epistemic reasoning. The models&#39; outputs are systematically influenced by non-epistemic factors, suggesting that while the raw computational machinery for epistemic differentiation may exist, it is not sufficiently integrated or prioritized to produce genuinely epistemic behavior.
+
+---
+
+## 8. Key Experimental Directions for Further Investigation
+
+Based on this review, the most promising experimental directions are:
+
+1. **Cross-benchmark epistemic probing**: Use the KaBLE tasks to test whether internal representations (a la Bortoletto et al.) differentiate between knowledge and belief attributions, not just self vs. other beliefs.
+
+2. **Epistemic fragility under controlled perturbation**: Extend the P-StaT framework to test whether epistemic perturbations (new evidence) and non-epistemic perturbations (tone/framing changes) produce distinguishable effects on internal representations.
+
+3. **Bayesian decomposition of belief types**: Apply the Bigelow et al. framework to tasks that explicitly require epistemic vs. non-epistemic belief distinction, testing whether the evidence (ICL) and prior (steering) pathways map cleanly onto these categories.
+
+4. **Lookback mechanism analysis for belief type**: Investigate whether the lookback mechanism (Lanham et al.) behaves differently for epistemic beliefs (beliefs formed from observation) vs. non-epistemic beliefs (beliefs based on values, desires, or social convention).
+
+5. **Factive verb processing**: Design experiments using factive (&#34;knows that&#34;) vs. non-factive (&#34;believes that&#34;) verbs to test whether LLMs encode the presuppositional difference at the representation level.
+
+---
+
+## 9. Paper-by-Paper Summary Table
+
+| # | arXiv ID | Short Title | Key Contribution | Datasets/Resources |
+|---|----------|-------------|------------------|--------------------|
+| 1 | 2410.21195 | KaBLE Benchmark | 13K questions testing belief/knowledge distinction; first-person asymmetry | KaBLE dataset, GitHub repo |
+| 2 | 2405.21030 | Standards for Belief | Four criteria for genuine belief representations | Theoretical framework |
+| 3 | 2402.18496 | RepBelief | Separate internal representations for self vs. other beliefs | BigToM dataset, probing code |
+| 4 | 2505.14685 | Lookbacks Track Beliefs | Discovered lookback attention mechanism for belief tracking | CausalToM dataset |
+| 5 | 2511.00617 | Belief Dynamics ICL | Bayesian framework unifying ICL (evidence) and steering (prior) | Anthropic persona evals |
+| 6 | 2511.22746 | Epistemic Fragility | Prompt framing systematically modulates misinformation correction | 320 misinformation prompts |
+| 7 | 2511.19166 | Representational Stability | Epistemic familiarity governs belief stability; P-StaT framework | Trilemma-of-Truth, Fictional datasets |
+| 8 | 2305.03353 | MindGames | DEL-based epistemic reasoning benchmark; LLMs near chance | MindGames dataset (HF) |
+| 9 | 2302.02083 | Evaluating LLMs ToM | Systematic ToM evaluation showing fragile performance | Various ToM benchmarks |
+| 10 | 2310.16755 | Hi-ToM | Higher-order ToM; performance degrades with depth | Hi-ToM benchmark |
+| 11 | 2310.15421 | FANToM | False belief in conversation | FANToM benchmark |
+| 12 | 2410.13648 | SimpleToM | Gap between mental state understanding and behavioral prediction | SimpleToM dataset |
+| 13 | 2310.03051 | How Far from ToM | Comprehensive ToM assessment | Multiple ToM benchmarks |
+| 14 | 2501.15355 | Counterfactual Reflection | LLMs ToM via counterfactual reasoning | - |
+| 15 | 2408.12022 | Epistemic Language Bayesian | Bayesian approach to epistemic language understanding | - |
+| 16 | 2306.00924 | Minding LM Lack of ToM | Documents systematic ToM failures | - |
+| 17 | 2407.06004 | Perceptions to Beliefs | From perceptual grounding to belief formation in LLMs | - |
+| 18 | 2109.14723 | BeliefBank | Structured belief storage and consistency | BeliefBank dataset |
+| 19 | 2502.06470 | Think Twice Perspective | Perspective-taking in ToM | - |
+| 20 | 2410.16270 | Reflection Bench | Epistemic reflection benchmark | - |
+| 21 | 2501.05032 | Fact Fiction Forecast | Representations of factual vs. fictional content | - |
+| 22 | 1603.07704 | Probabilistic Coherence | Bayesian coherence in language models | - |
+| 23 | 2504.19622 | Evidence to Belief | Bayesian evidence integration | - |
+| 24 | 1910.07514 | Reducing Overconfidence | Calibration and epistemic confidence | - |
+| 25 | 2510.09033 | LLMs Know What Humans Know | Modeling human knowledge attribution | - |
+| 26 | 2407.15814 | Linguistic Uncertainty | Perceptions of uncertainty expressions | - |
+| 27 | 2309.02144 | Belief Revision | How LLMs update beliefs with contradictory evidence | - |
+| 28 | 2408.07237 | Semantic Embedding Beliefs | Embedding-level belief representations | - |
+| 29 | 2505.14685 | Lookbacks Track Beliefs | Mechanistic belief tracking via attention | CausalToM dataset |
+
+---
+
+## 10. Conclusion
+
+The current evidence suggests that LLMs have **partial but incomplete** differentiation between epistemic and non-epistemic belief. Internally, they maintain representations that encode aspects relevant to epistemic distinctions (familiarity, observational access, evidence vs. priors). Behaviorally, however, they fail to consistently deploy these distinctions: they confuse knowledge with belief, allow non-epistemic contextual features to override epistemic commitments, and cannot robustly perform formal epistemic reasoning. The gap between representational capacity and behavioral competence represents both a key finding and a primary target for future research.
+
+
+════════════════════════════════════════════════════════════════════════════════
+                          PAPER REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+Generate a complete academic paper with the following structure:
+
+1. TITLE
+   - Clear, specific, informative
+   - Should convey main finding or contribution
+
+2. ABSTRACT (150-250 words)
+   - Problem statement
+   - Approach
+   - Key results
+   - Significance
+
+3. INTRODUCTION
+   - Research problem and motivation
+   - Gap in existing work
+   - Our contribution (be specific)
+   - Paper organization
+
+4. RELATED WORK
+   - Organized by theme/approach
+   - Position our work relative to prior work
+   - Cite papers from literature review
+
+5. METHODOLOGY
+   - Clear description of approach
+   - Experimental setup
+   - Datasets used
+   - Evaluation metrics
+   - Baselines
+
+6. RESULTS
+   - Present results with tables and figures
+   - Statistical analysis
+   - Comparison to baselines
+   - Ablation studies (if applicable)
+
+7. DISCUSSION
+   - Interpretation of results
+   - Limitations
+   - Broader implications
+
+8. CONCLUSION
+   - Summary of contributions
+   - Key findings
+   - Future work
+
+9. REFERENCES
+   - BibTeX format
+   - All cited papers
+
+════════════════════════════════════════════════════════════════════════════════
+                          OUTPUT FORMAT
+════════════════════════════════════════════════════════════════════════════════
+
+Create a MODULAR LaTeX project with the following directory structure:
+
+paper_draft/
+├── main.tex              # Main file that imports all sections
+├── references.bib        # BibTeX references
+├── sections/
+│   ├── abstract.tex      # Abstract content
+│   ├── introduction.tex  # Introduction section
+│   ├── related_work.tex  # Related work section
+│   ├── methodology.tex   # Methodology section
+│   ├── results.tex       # Results section
+│   ├── discussion.tex    # Discussion section
+│   └── conclusion.tex    # Conclusion section
+├── figures/              # Directory for any generated figures
+├── tables/               # Directory for complex standalone tables
+└── appendix/             # Directory for appendix sections (if needed)
+
+INSTRUCTIONS:
+1. First, create the directory structure above (mkdir -p paper_draft/sections paper_draft/figures paper_draft/tables paper_draft/appendix)
+2. Write main.tex using the EXACT preamble for NEURIPS:
+
+   \documentclass{article}
+   \usepackage[final]{neurips_2025}  % NEURIPS style (neurips_2025.sty is in paper_draft/)
+   \usepackage[hidelinks]{hyperref}  % REQUIRED: clickable links
+   \usepackage{booktabs}  % REQUIRED: professional tables
+   \usepackage{graphicx}
+   \usepackage{amsmath,amssymb}
+
+   % Import command files
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+   % Use this bibliography style:
+   \bibliographystyle{plainnat}
+
+   - Use \input{sections/...} to include each section
+   - Use \bibliography{references} for references
+3. Write each section file with COMPLETE content (no placeholders)
+4. Each section file should include its \section{} command
+5. Write references.bib with all citations in BibTeX format
+6. After writing all files, compile the paper:
+   cd paper_draft && pdflatex -interaction=nonstopmode main.tex && bibtex main && pdflatex -interaction=nonstopmode main.tex && pdflatex -interaction=nonstopmode main.tex
+
+This modular structure allows humans to easily:
+- Edit individual sections without navigating a large file
+- Track changes per section
+- Reuse sections across different paper versions
+
+════════════════════════════════════════════════════════════════════════════════
+                          QUALITY REQUIREMENTS
+════════════════════════════════════════════════════════════════════════════════
+
+- Academic tone throughout
+- All claims must be supported by data from the experiment report
+- Proper citations using \cite{} commands
+- Clear figures and tables with proper captions
+- NO placeholder text - every section must have real content
+- The paper MUST compile without errors
+- If compilation fails, debug and fix the LaTeX errors
+
+════════════════════════════════════════════════════════════════════════════════
+                          LAB WRITING STYLE
+════════════════════════════════════════════════════════════════════════════════
+
+Follow these lab-specific conventions to match our paper style:
+
+1. LANGUAGE STYLE:
+   - Use active voice: "We propose", "We examine", "We focus on"
+   - Be direct and confident: "Our main question is...", "We hypothesize that..."
+   - State things clearly and simply - prefer plain language over jargon
+   - Use bold questions as paragraph organizers: {\bf what is X?}
+   - Include specific quantitative claims: "8.97% over baseline"
+   - Avoid fancy wording: "utilize" → "use", "facilitate" → "help"
+
+2. INTRODUCTION STRUCTURE:
+   - Engaging hook (get to the point quickly)
+   - Problem importance
+   - Gap identification
+   - Your approach with method figure reference
+   - Quantitative preview of results
+   - Contribution bullets (3-4 items, action verbs)
+
+3. CONTRIBUTION LISTS:
+   \begin{itemize}[leftmargin=*,itemsep=0pt,topsep=0pt]
+       \item We propose...
+       \item We conduct...
+       \item We complement...
+   \end{itemize}
+
+4. MODULAR COMMANDS STRUCTURE:
+   Create paper_draft/commands/ directory with:
+   - math.tex: Math notation macros (copy from templates/paper_writing/commands/)
+   - general.tex: Formatting macros (copy from templates/paper_writing/commands/)
+   - macros.tex: Project-specific term definitions
+
+   In main.tex, include:
+   \input{commands/math}
+   \input{commands/general}
+   \input{commands/macros}
+
+5. REFERENCE CONVENTIONS:
+   Use reference macros from math.tex:
+   - \figref{fig:name} for "figure 1" (lowercase, in-sentence)
+   - \Figref{fig:name} for "Figure 1" (capitalized, start of sentence)
+   - \secref{sec:name} for "section 2"
+
+6. TEXT FORMATTING:
+   - Use \para{Header text} for bold paragraph headers
+   - Define method/dataset names with \textsc and \xspace:
+     \newcommand{\methodname}{\textsc{MethodName}\xspace}
+
+7. TABLE FORMATTING:
+   - Use booktabs package (no vertical lines)
+   - Use \resizebox{\textwidth}{!}{...} for wide tables
+   - Use @{} to remove padding at table edges
+   - Use \cmidrule(lr){x-y} for sub-headers
+   - Use \textsc{} for dataset/method names in headers
+   - Bold best results with {\bf ...}
+
+8. FIGURE FORMATTING:
+   - Use 0.32\textwidth for 3-column subfigures
+   - Use 0.95\linewidth for full-width figures
+   - Use \input{figures/legend} for shared legends
+   - Write self-contained captions explaining key observations
+
+9. RESULTS PRESENTATION:
+   - Define \increase and \decrease for colored arrows (green up, red down)
+   - Bold best results in tables
+   - Report confidence intervals when available
+
+10. ALGORITHM STYLING:
+    - Use algpseudocode with [noend]
+    - Use \triangleright for comments
+
+11. HYPERLINKS (REQUIRED):
+    - Always use \usepackage[hidelinks]{hyperref} or with colored links
+    - All citations, section refs, figure refs, table refs must be clickable
+    - This is essential for reader navigation
+
+════════════════════════════════════════════════════════════════════════════════
+                          WORKFLOW: REVIEW AND REFLECT
+════════════════════════════════════════════════════════════════════════════════
+
+Before calling finish, you MUST complete these review steps:
+
+1. REVIEW RESOURCES (at the start):
+   - Read templates/skills/paper-writer/SKILL.md for detailed guidance
+   - Study templates/paper_writing/lab_style_guide.md for style conventions
+   - Browse paper_examples/ for formatting and language patterns
+
+2. SELF-REFLECTION (before finishing):
+   After writing all sections, review your work against these criteria:
+
+   LANGUAGE CHECK:
+   - [ ] Is the writing clear and jargon-free?
+   - [ ] Are claims specific with quantitative support?
+   - [ ] Is active voice used throughout?
+
+   FORMATTING CHECK:
+   - [ ] Does main.tex include \input{commands/math}, \input{commands/general}, \input{commands/macros}?
+   - [ ] Is hyperref package included for clickable references?
+   - [ ] Do tables use booktabs (no vertical lines)?
+   - [ ] Are best results bolded in tables?
+   - [ ] Are figures/tables properly captioned?
+
+   STRUCTURE CHECK:
+   - [ ] Does introduction follow: hook → importance → gap → approach → preview → contributions?
+   - [ ] Are contribution bullets specific with action verbs?
+   - [ ] Does the paper compile without errors?
+
+3. FIX ISSUES:
+   - Address any issues found in the self-reflection
+   - Re-compile and verify the PDF looks correct
+
+Only after completing this review should you consider the paper finished.

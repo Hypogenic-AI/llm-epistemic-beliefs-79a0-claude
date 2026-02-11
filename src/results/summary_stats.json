@@ -1,0 +1,30 @@
+{
+  "experiment_1_classification": {
+    "overall_accuracy": 1.0,
+    "epistemic_accuracy": 1.0,
+    "non_epistemic_accuracy": 1.0,
+    "cohens_kappa": 1.0,
+    "n_total": 120
+  },
+  "experiment_3_revision": {
+    "n_valid": 120,
+    "epistemic_revision_mean": 2.55,
+    "non_epistemic_revision_mean": 3.2666666666666666,
+    "mann_whitney_p": 0.0023645457777313928,
+    "cohens_d": -0.45053177663339405
+  },
+  "experiment_4_verb_sensitivity": {
+    "n_valid": 90,
+    "kruskal_wallis_p": 1.2699239044123175e-05,
+    "certainty_by_verb": {
+      "knows": 3.6666666666666665,
+      "believes": 1.4333333333333333,
+      "values": 2.1666666666666665
+    },
+    "truth_by_verb": {
+      "knows": 0.6333333333333333,
+      "believes": 0.0,
+      "values": 0.0
+    }
+  }
+}

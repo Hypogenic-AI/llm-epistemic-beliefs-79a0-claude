@@ -1,0 +1,51 @@
+\documentclass{article}
+
+\usepackage[main, final]{neurips_2025}
+
+% Standard packages
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{nicefrac}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{subcaption}
+
+% Import command files
+\input{commands/math}
+\input{commands/general}
+\input{commands/macros}
+
+% Bibliography style
+\bibliographystyle{plainnat}
+
+\title{Do LLMs Differentiate Epistemic Belief from Non-Epistemic Belief? \\
+Evidence from Behavioral Probing of GPT-4.1}
+
+\author{
+  Anonymous Author(s)
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+\input{sections/abstract}
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/related_work}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\bibliography{references}
+
+\end{document}
